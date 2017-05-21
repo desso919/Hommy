@@ -6,6 +6,7 @@ import com.hommy.administrator.dao.objects.Device;
 
 public interface IDevice {
 
+	// TODO add javadoc
 	public List<Device> getAllDevice();
 
 	public Device getDevice();
