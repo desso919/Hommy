@@ -5,7 +5,7 @@ import java.util.List;
 import com.hommy.administrator.dao.interfaces.IDevice;
 import com.hommy.administrator.dao.objects.Device;
 
-public class Devices implements IDevice {
+public class DevicesOperation implements IDevice {
 
 	@Override
 	public List<Device> getAllDevice() {

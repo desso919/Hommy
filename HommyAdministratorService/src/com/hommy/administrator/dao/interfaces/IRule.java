@@ -1,12 +1,11 @@
 package com.hommy.administrator.dao.interfaces;
 
-import java.util.List;
-
 import com.hommy.administrator.dao.objects.Rule;
+import com.hommy.administrator.dao.objects.Rules;
 
 public interface IRule {
 
-	public List<Rule> getAllRules();
+	public Rules getAllRules();
 
 	public Rule getRule();
 

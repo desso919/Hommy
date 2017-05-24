@@ -7,24 +7,23 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.hommy.administrator.dao.interfaces.IRule;
 import com.hommy.administrator.dao.objects.Device;
 import com.hommy.administrator.dao.objects.Rule;
+import com.hommy.administrator.dao.objects.Rules;
 import com.hommy.database.DatabaseConnection;
 
-public class Rules implements IRule {
-
-	private List<Rule> rules = new ArrayList<Rule>();
+public class RulesOperation implements IRule {
 
 	static {
 		DatabaseConnection.initialize();
 	}
 
 	@Override
-	public List<Rule> getAllRules() {
+	public Rules getAllRules() {
 		Connection connection = DatabaseConnection.createConnection();
+		List<Rule> rules = new ArrayList<Rule>();
+		Rules rulesManage = new Rules();
 		String query = "select * from rules";
 
 		Statement statement;
@@ -49,7 +48,8 @@ public class Rules implements IRule {
 			e.printStackTrace();
 		}
 
-		return rules;
+		rulesManage.setRules(rules);
+		return rulesManage;
 	}
 
 	@Override
@@ -68,10 +68,5 @@ public class Rules implements IRule {
 	public void removeRule() {
 		// TODO Auto-generated method stub
 
-	}
-
-	public String toJSON() throws JsonProcessingException {
-		ObjectMapper mapper = new ObjectMapper();
-		return mapper.writeValueAsString(this);
 	}
 }

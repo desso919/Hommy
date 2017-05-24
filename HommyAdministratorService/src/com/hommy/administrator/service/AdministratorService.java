@@ -7,7 +7,8 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.hommy.administrator.dao.impl.Rules;
+import com.hommy.administrator.dao.impl.RulesOperation;
+import com.hommy.administrator.dao.objects.Rules;
 
 @Path("/admin")
 public class AdministratorService {
@@ -16,9 +17,7 @@ public class AdministratorService {
 	@Path("/rules")
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response getAllRules() throws JsonProcessingException {
-		Rules rules = new Rules();
-
-		rules.getAllRules();
+		Rules rules = new RulesOperation().getAllRules();
 
 		String allRules = rules.toJSON();
 
