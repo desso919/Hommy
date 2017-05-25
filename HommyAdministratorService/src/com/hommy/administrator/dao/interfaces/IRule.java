@@ -7,9 +7,9 @@ public interface IRule {
 
 	public Rules getAllRules();
 
-	public Rule getRule();
+	public Rule getRule(Rule rule);
 
-	public void addRule();
+	public void addRule(Rule rule);
 
-	public void removeRule();
+	public void removeRule(Rule rule);
 }

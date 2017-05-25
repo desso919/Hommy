@@ -5,31 +5,20 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class Rule {
 
-	private String name;
 	private String id;
+	private String name;
+	private User user;
+	private Event event;
 	private Device device;
-	private String action;
+	private Action action;
 
-	public Rule() {
-		this.name = "test";
-		this.id = "0";
-		this.device = null;
-		this.action = "no action";
-	}
-
-	public Rule(String name, String id, Device device, String action) {
-		this.name = name;
+	public Rule(String id, String name, User user, Event event, Device device, Action action) {
 		this.id = id;
+		this.name = name;
+		this.user = user;
+		this.event = event;
 		this.device = device;
 		this.action = action;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
 	}
 
 	public String getId() {
@@ -40,6 +29,30 @@ public class Rule {
 		this.id = id;
 	}
 
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
+	}
+
+	public Event getEvent() {
+		return event;
+	}
+
+	public void setEvent(Event event) {
+		this.event = event;
+	}
+
 	public Device getDevice() {
 		return device;
 	}
@@ -48,11 +61,11 @@ public class Rule {
 		this.device = device;
 	}
 
-	public String getAction() {
+	public Action getAction() {
 		return action;
 	}
 
-	public void setAction(String action) {
+	public void setAction(Action action) {
 		this.action = action;
 	}
 

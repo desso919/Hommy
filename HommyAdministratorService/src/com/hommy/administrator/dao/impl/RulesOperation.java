@@ -8,7 +8,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.hommy.administrator.dao.interfaces.IRule;
-import com.hommy.administrator.dao.objects.Device;
 import com.hommy.administrator.dao.objects.Rule;
 import com.hommy.administrator.dao.objects.Rules;
 import com.hommy.database.DatabaseConnection;
@@ -39,10 +38,6 @@ public class RulesOperation implements IRule {
 				String action = resultSet.getString("action");
 
 				System.out.println("Rule: " + id + "  " + name + "   " + device + "  " + action);
-
-				Rule rule = new Rule(name, String.valueOf(id),
-						new Device("Washing machine", String.valueOf(device), "225.255.255.0"), action);
-				rules.add(rule);
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -53,20 +48,21 @@ public class RulesOperation implements IRule {
 	}
 
 	@Override
-	public Rule getRule() {
+	public Rule getRule(Rule rule) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public void addRule() {
+	public void addRule(Rule rule) {
 		// TODO Auto-generated method stub
 
 	}
 
 	@Override
-	public void removeRule() {
+	public void removeRule(Rule rule) {
 		// TODO Auto-generated method stub
 
 	}
+
 }

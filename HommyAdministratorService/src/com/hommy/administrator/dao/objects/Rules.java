@@ -49,8 +49,8 @@ public class Rules {
 	}
 
 	public boolean containsRuleWithName(String name) {
-		for (Rule survey : rules) {
-			if (survey.getName().equals(name)) {
+		for (Rule rule : rules) {
+			if (rule.getName().equals(name)) {
 				return true;
 			}
 		}

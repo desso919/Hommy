@@ -1,18 +1,17 @@
 package com.hommy.administrator.dao.interfaces;
 
-import java.util.List;
-
 import com.hommy.administrator.dao.objects.Device;
+import com.hommy.administrator.dao.objects.Devices;
 
 public interface IDevice {
 
 	// TODO add javadoc
-	public List<Device> getAllDevice();
+	public Devices getAllDevice();
 
-	public Device getDevice();
+	public Device getDevice(String name);
 
-	public void addDevice();
+	public boolean addDevice(Device device);
 
-	public void removeDevice();
+	public boolean removeDevice(int id);
 
 }
