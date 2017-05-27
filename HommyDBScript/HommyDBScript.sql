@@ -171,4 +171,114 @@ ENABLE;
 
 
 
+--###############################  CREATE SEQUENCE FOR USERS TABLE ###############################
+CREATE SEQUENCE USERS_SEQ
+  START WITH 1
+  INCREMENT BY 1
+  CACHE 20;
+  
+--###############################  CREATE TRIGGER FOR USERS TABLE ###############################
+  CREATE OR REPLACE TRIGGER TRG_USERS_SEQ_ID
+  BEFORE INSERT ON USERS
+  FOR EACH ROW
+BEGIN
+  :new.id := USERS_SEQ.nextval;
+END;
+
+
+
+
+--###############################  CREATE SEQUENCE FOR ACTIONS TABLE ###############################
+CREATE SEQUENCE ACTIONS_SEQ
+  START WITH 1
+  INCREMENT BY 1
+  CACHE 20;
+  
+--###############################  CREATE TRIGGER FOR ACTIONS TABLE ###############################
+  CREATE OR REPLACE TRIGGER TRG_ACTIONS_SEQ_ID
+  BEFORE INSERT ON ACTIONS
+  FOR EACH ROW
+BEGIN
+  :new.id := ACTIONS_SEQ.nextval;
+END;
+
+
+
+
+--###############################  CREATE SEQUENCE FOR EVENTS TABLE ###############################
+CREATE SEQUENCE EVENTS_SEQ
+  START WITH 1
+  INCREMENT BY 1
+  CACHE 20;
+  
+--###############################  CREATE TRIGGER FOR EVENTS TABLE ###############################
+  CREATE OR REPLACE TRIGGER TRG_EVENTS_SEQ_ID
+  BEFORE INSERT ON EVENTS
+  FOR EACH ROW
+BEGIN
+  :new.id := EVENTS_SEQ.nextval;
+END;
+
+
+
+
+--###############################  CREATE SEQUENCE FOR DEVICES TABLE ###############################
+CREATE SEQUENCE DEVICES_SEQ
+  START WITH 1
+  INCREMENT BY 1
+  CACHE 20;
+  
+--###############################  CREATE TRIGGER FOR DEVICES TABLE ###############################
+  CREATE OR REPLACE TRIGGER TRG_DEVICES_SEQ_ID
+  BEFORE INSERT ON DEVICES
+  FOR EACH ROW
+BEGIN
+  :new.id := DEVICES_SEQ.nextval;
+END;
+
+
+
+
+--###############################  CREATE SEQUENCE FOR DEVICEACTIONS TABLE ###############################
+CREATE SEQUENCE DEVICE_ACTIONS_SEQ
+  START WITH 1
+  INCREMENT BY 1
+  CACHE 20;
+  
+--###############################  CREATE TRIGGER FOR DEVICEACTIONS TABLE ###############################
+  CREATE OR REPLACE TRIGGER TRG_DEVICE_ACTIONS_SEQ_ID
+  BEFORE INSERT ON DEVICEACTIONS
+  FOR EACH ROW
+BEGIN
+  :new.id := DEVICE_ACTIONS_SEQ.nextval;
+END;
+
+
+
+
+--###############################  CREATE SEQUENCE FOR RULES TABLE ###############################
+CREATE SEQUENCE RULES_SEQ
+  START WITH 1
+  INCREMENT BY 1
+  CACHE 20;
+  
+--###############################  CREATE TRIGGER FOR RULES TABLE ###############################
+  CREATE OR REPLACE TRIGGER TRG_RULES_SEQ_ID
+  BEFORE INSERT ON RULES
+  FOR EACH ROW
+BEGIN
+  :new.id := RULES_SEQ.nextval;
+END;
+
+
+
+
+
+
+
+
+
+
+
+
 
