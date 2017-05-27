@@ -34,7 +34,7 @@ public class EventsService {
 
 	@Path("/event")
 	@GET
-	@Consumes(MediaType.APPLICATION_JSON)
+	@Produces(MediaType.APPLICATION_JSON)
 	public Response getEvent(@QueryParam("name") String name) throws JsonProcessingException {
 		Event event = null;
 
@@ -53,7 +53,7 @@ public class EventsService {
 
 	@Path("/remove")
 	@GET
-	@Consumes(MediaType.APPLICATION_JSON)
+	@Produces(MediaType.APPLICATION_JSON)
 	public Response removeEvent(@QueryParam("id") int id) throws JsonProcessingException {
 		boolean isRemovedSuccessfully = false;
 
@@ -71,6 +71,7 @@ public class EventsService {
 	@Path("/add")
 	@POST
 	@Consumes(MediaType.APPLICATION_JSON)
+	@Produces(MediaType.APPLICATION_JSON)
 	public Response addEvent(final String event) throws JsonParseException, JsonMappingException, IOException {
 		ObjectMapper mapper = new ObjectMapper();
 		boolean isAddedSuccessfully = false;

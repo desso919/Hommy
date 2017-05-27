@@ -34,7 +34,7 @@ public class DeviceService {
 
 	@Path("/device")
 	@GET
-	@Consumes(MediaType.APPLICATION_JSON)
+	@Produces(MediaType.APPLICATION_JSON)
 	public Response getDevice(@QueryParam("name") String name) throws JsonProcessingException {
 		Device device = null;
 
@@ -53,7 +53,7 @@ public class DeviceService {
 
 	@Path("/remove")
 	@GET
-	@Consumes(MediaType.APPLICATION_JSON)
+	@Produces(MediaType.APPLICATION_JSON)
 	public Response removeDevice(@QueryParam("id") int id) throws JsonProcessingException {
 		boolean isRemovedSuccessfully = false;
 
@@ -72,6 +72,7 @@ public class DeviceService {
 	@Path("/add")
 	@POST
 	@Consumes(MediaType.APPLICATION_JSON)
+	@Produces(MediaType.APPLICATION_JSON)
 	public Response addDevice(final String device) throws JsonParseException, JsonMappingException, IOException {
 		ObjectMapper mapper = new ObjectMapper();
 		boolean isAddedSuccessfully = false;

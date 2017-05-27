@@ -13,6 +13,10 @@ public class Device {
 	private Protocol protocol;
 	private List<Action> actions;
 
+	public Device(int id) {
+		this.id = id;
+	}
+
 	public Device(int id, String name) {
 		this.id = id;
 		this.name = name;

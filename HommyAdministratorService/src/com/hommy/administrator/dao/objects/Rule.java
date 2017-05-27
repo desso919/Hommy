@@ -5,27 +5,39 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class Rule {
 
-	private String id;
+	private int id;
 	private String name;
 	private User user;
 	private Event event;
-	private Device device;
+	private Devices devices;
 	private Action action;
 
-	public Rule(String id, String name, User user, Event event, Device device, Action action) {
+	public Rule() {
+	}
+
+	public Rule(String name) {
+		this.name = name;
+	}
+
+	public Rule(int id, String name) {
+		this.id = id;
+		this.name = name;
+	}
+
+	public Rule(int id, String name, User user, Event event, Devices device, Action action) {
 		this.id = id;
 		this.name = name;
 		this.user = user;
 		this.event = event;
-		this.device = device;
+		this.devices = device;
 		this.action = action;
 	}
 
-	public String getId() {
+	public int getId() {
 		return id;
 	}
 
-	public void setId(String id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
@@ -53,12 +65,12 @@ public class Rule {
 		this.event = event;
 	}
 
-	public Device getDevice() {
-		return device;
+	public Devices getDevices() {
+		return devices;
 	}
 
-	public void setDevice(Device device) {
-		this.device = device;
+	public void setDevices(Devices devices) {
+		this.devices = devices;
 	}
 
 	public Action getAction() {
@@ -71,7 +83,7 @@ public class Rule {
 
 	@Override
 	public String toString() {
-		return "Rule [name=" + name + ", id=" + id + ", device=" + device + ", action=" + action + "]";
+		return "Rule [name=" + name + ", id=" + id + ", device=" + devices + ", action=" + action + "]";
 	}
 
 	public String toJSON() throws JsonProcessingException {

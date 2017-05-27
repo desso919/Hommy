@@ -7,6 +7,7 @@ public class Action {
 
 	private int id;
 	private String action;
+	private int executionOrder;
 
 	public Action(int id, String action) {
 		this.id = id;
@@ -27,6 +28,14 @@ public class Action {
 
 	public void setAction(String action) {
 		this.action = action;
+	}
+
+	public int getExecutionOrder() {
+		return executionOrder;
+	}
+
+	public void setExecutionOrder(int executionOrder) {
+		this.executionOrder = executionOrder;
 	}
 
 	@Override

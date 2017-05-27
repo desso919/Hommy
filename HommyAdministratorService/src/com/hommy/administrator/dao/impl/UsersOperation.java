@@ -30,11 +30,12 @@ public class UsersOperation implements IUser {
 			ResultSet resultSet = preparedStatement.executeQuery();
 
 			if (resultSet.next()) {
+				int id = resultSet.getInt("id");
 				String email = resultSet.getString("email");
 				System.out.println("User: " + resultSet.getString("username") + "  " + resultSet.getString("password")
 						+ "   " + email);
 
-				return new User(username, password, email);
+				return new User(id, username, password, email);
 			} else {
 				System.out.println("User does not exist");
 				return null;

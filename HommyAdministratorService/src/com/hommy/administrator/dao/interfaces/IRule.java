@@ -9,7 +9,7 @@ public interface IRule {
 
 	public Rule getRule(Rule rule);
 
-	public void addRule(Rule rule);
+	public boolean addRule(Rule rule);
 
 	public void removeRule(Rule rule);
 }

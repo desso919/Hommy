@@ -44,6 +44,34 @@ public class EventsOperation implements IEvent {
 		return events;
 	}
 
+	public Event getEvent(Connection connection, int id) {
+		String query = "select * from events where id=?";
+
+		PreparedStatement preparedStatement;
+		try {
+			preparedStatement = connection.prepareStatement(query);
+			preparedStatement.setInt(1, id);
+
+			ResultSet resultSet = preparedStatement.executeQuery();
+
+			if (resultSet.next()) {
+				String eventName = resultSet.getString("eventname");
+				String description = resultSet.getString("description");
+
+				System.out.println("Event: " + id + "  " + eventName + "   " + description);
+
+				return new Event(id, eventName, description);
+			} else {
+				System.out.println("Event with this Id: " + id + " does not exist");
+			}
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+		return null;
+	}
+
 	@Override
 	public Event getEvent(String name) {
 		Connection connection = DatabaseConnection.createConnection();
