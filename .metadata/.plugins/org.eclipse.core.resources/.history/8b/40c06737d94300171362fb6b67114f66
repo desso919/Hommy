@@ -1,0 +1,32 @@
+package com.hommy.service;
+
+import java.util.TimerTask;
+
+import com.hommy.service.interfaces.ITopic;
+
+public class ProcessPublicationQueue extends TimerTask {
+	private boolean isRunning = true;
+
+	public void stop() {
+		isRunning = false;
+	}
+
+	@Override
+	public void run() {
+
+		while (isRunning) {
+			System.out.println("Starting new thread: ");
+			Publication publication = PublicationQueue.pollPublication();
+			if (publication != null) {
+				System.out.println("Procesing: " + publication.getMessage());
+
+				ITopic topic = TopicsPool.getTopic(publication.getTopicName());
+				topic.publishMessage(publication.getMessage());
+			} else {
+				System.out.println("Publication queue is empty, hence stoping.");
+				//isRunning = false;
+			}
+		}
+
+	}
+}

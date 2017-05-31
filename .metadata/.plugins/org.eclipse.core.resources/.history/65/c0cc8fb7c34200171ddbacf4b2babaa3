@@ -1,0 +1,14 @@
+package com.hommy.administrator.dao.impl;
+
+import com.hommy.administrator.dao.objects.Rule;
+
+public class TestClass {
+
+	
+	public static void main(String[] args) {
+		Rule rule = new Rule();
+		 new RulesOperation().addRule(rule)
+
+		System.out.println();
+	}
+}

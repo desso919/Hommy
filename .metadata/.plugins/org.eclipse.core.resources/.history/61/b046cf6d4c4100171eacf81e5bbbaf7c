@@ -1,0 +1,6 @@
+package com.hommy.administrator.service;
+
+public class OperationResult {
+
+	private String
+}

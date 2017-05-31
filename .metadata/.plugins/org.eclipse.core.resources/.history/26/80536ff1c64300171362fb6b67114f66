@@ -1,0 +1,10 @@
+package com.hommy.service;
+
+import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.LinkedBlockingQueue;
+
+import oracle.net.ns.Packet;
+
+public class PublicationQueue {
+	private BlockingQueue<Packet> queue = new LinkedBlockingQueue<>();
+}

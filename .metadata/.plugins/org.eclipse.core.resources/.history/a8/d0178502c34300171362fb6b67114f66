@@ -1,0 +1,12 @@
+package com.hommy.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.hommy.service.interfaces.ITopic;
+
+public class TopicsPool {
+
+	List<ITopic> topics = new ArrayList<ITopic>();
+
+}

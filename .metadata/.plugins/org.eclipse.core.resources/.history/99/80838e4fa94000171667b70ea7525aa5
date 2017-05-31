@@ -1,0 +1,14 @@
+package com.hommy.administrator.dao.interfaces;
+
+import com.hommy.administrator.dao.objects.Action;
+
+public interface IAction {
+
+	public Action getAllActions();
+
+	public Action getAction(Action action);
+
+	public void addAction();
+
+	public void removeAction(Action action);
+}

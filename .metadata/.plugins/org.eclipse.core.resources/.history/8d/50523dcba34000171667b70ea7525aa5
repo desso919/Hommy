@@ -1,0 +1,5 @@
+package com.hommy.administrator.dao.objects;
+
+public class Action {
+
+}

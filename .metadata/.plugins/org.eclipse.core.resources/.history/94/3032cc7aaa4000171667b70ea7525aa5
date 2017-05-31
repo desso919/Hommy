@@ -1,0 +1,12 @@
+package com.hommy.administrator.dao.interfaces;
+
+import com.hommy.administrator.dao.objects.Rules;
+
+public interface IUser {
+
+	public User getUser(String username, String password);
+
+	public void addUser();
+
+	public void removeUser();
+}

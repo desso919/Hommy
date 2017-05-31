@@ -1,0 +1,14 @@
+package com.hommy.service.topics;
+
+import java.util.List;
+
+import com.hommy.service.interfaces.IDeviceSubscriber;
+import com.hommy.service.interfaces.ITopic;
+
+public abstract class Topic implements ITopic {
+
+	private List<IDeviceSubscriber> subscribers = new ArrayList<IDeviceSubscriber>;
+	private String message;
+	private boolean isChanged;
+	private final Object MUTEX = new Object();
+}

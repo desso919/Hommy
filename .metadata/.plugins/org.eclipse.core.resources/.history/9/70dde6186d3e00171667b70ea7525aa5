@@ -1,0 +1,66 @@
+package com.hommy.administrator.dao.objects;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+public class Devices {
+
+	private List<Device> devices;
+
+	public Devices() {
+		devices = new ArrayList<Device>();
+	}
+
+	public Device(List<Device> rules) {
+		this.devices = rules;
+	}
+
+	public List<Rule> getRules() {
+		return devices;
+	}
+
+	public void setRules(List<Rule> rules) {
+		this.devices = rules;
+	}
+
+	public boolean addRule(Rule rule) {
+		if (rule != null) {
+			devices.add(rule);
+			return true;
+		}
+		return false;
+	}
+
+	public Rule getRule(int index) {
+		return devices.get(index);
+	}
+
+	public Rule getRule(String name) {
+		for (Rule rule : devices) {
+			if (rule.getName().equals(name)) {
+				return rule;
+			}
+		}
+
+		return null;
+	}
+
+	public boolean containsRuleWithName(String name) {
+		for (Rule survey : devices) {
+			if (survey.getName().equals(name)) {
+				return true;
+			}
+		}
+
+		return false;
+	}
+
+	public String toJSON() throws JsonProcessingException {
+		ObjectMapper mapper = new ObjectMapper();
+		return mapper.writeValueAsString(this);
+	}
+
+}

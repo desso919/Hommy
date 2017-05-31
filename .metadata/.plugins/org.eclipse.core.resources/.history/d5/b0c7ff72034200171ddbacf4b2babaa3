@@ -1,0 +1,34 @@
+package com.hommy.administrator.service;
+
+import javax.ws.rs.Consumes;
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.QueryParam;
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
+
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.hommy.administrator.dao.impl.EventsOperation;
+import com.hommy.administrator.dao.objects.Event;
+
+@Path("/rules")
+public class RulesService {
+
+	@GET
+	@Consumes(MediaType.APPLICATION_JSON)
+	public Response getEvent(@QueryParam("userId") int id) throws JsonProcessingException {
+		Event event = null;
+
+		if (name != null) {
+			event = new EventsOperation().getEvent(name);
+		}
+
+		if (event != null) {
+			return Response.status(200).entity(event).build();
+		} else {
+			return Response.status(200)
+					.entity(new OperationResult(Result.FAILED, "Could not find an event with this name").toJSON())
+					.build();
+		}
+	}
+}

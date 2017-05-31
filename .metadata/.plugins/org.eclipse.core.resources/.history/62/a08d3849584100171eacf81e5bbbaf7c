@@ -1,0 +1,16 @@
+package com.hommy.administrator.dao.interfaces;
+
+import java.util.List;
+
+import com.hommy.administrator.dao.objects.Action;
+
+public interface IAction {
+
+	public Action getActions(List<Integer> Actionsid);
+
+	public Action getAction();
+
+	public void addAction(Action action);
+
+	public void removeAction(Action action);
+}

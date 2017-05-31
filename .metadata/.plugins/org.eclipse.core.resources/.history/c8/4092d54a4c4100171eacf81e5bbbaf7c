@@ -1,0 +1,5 @@
+package com.hommy.administrator.service;
+
+public enum Result {
+
+}

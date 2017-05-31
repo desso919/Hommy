@@ -17,6 +17,11 @@ public class Device {
 		this.id = id;
 	}
 
+	public Device(String name) {
+		this.name = name;
+		protocol = Protocol.HTTPS;
+	}
+
 	public Device(int id, String name) {
 		this.id = id;
 		this.name = name;

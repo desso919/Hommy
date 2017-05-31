@@ -1,0 +1,22 @@
+package com.hommy.service.interfaces;
+
+import com.hommy.service.IObserver;
+
+public interface ITopic {
+
+	// methods to register and unregister observers
+	/**
+	 * This methods is for register new devices.
+	 * 
+	 * @param obj
+	 */
+	public void register(IObserver obj);
+
+	public void unregister(IObserver obj);
+
+	// method to notify observers of change
+	public void notifySubscribers();
+
+	// method to get updates from subject
+	public Object getUpdate(IObserver obj);
+}

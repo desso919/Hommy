@@ -1,0 +1,8 @@
+package com.hommy.administrator.dao.objects;
+
+public class User {
+	
+	private String username;
+	private String email;
+
+}

@@ -1,0 +1,43 @@
+package com.hommy.service.topics;
+
+import java.util.List;
+
+import com.hommy.service.interfaces.IDeviceSubscriber;
+
+public class TemperatureTopic extends Topic {
+
+	@Override
+	public boolean register(IDeviceSubscriber device) {
+		if (device != null) {
+			synchronized (super.MUTEX) {
+				List<IDeviceSubscriber> subscribers = super.getSubscribers();
+				if (!subscribers.contains(device))
+					return subscribers.add(device);
+			}
+		}
+		return false;
+	}
+
+	@Override
+	public boolean unregister(IDeviceSubscriber device) {
+		if (device != null) {
+			synchronized (MUTEX) {
+				observers.remove(obj);
+			}
+		}
+
+	}
+
+	@Override
+	public void notifySubscribers() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public Object getUpdate(IDeviceSubscriber device) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

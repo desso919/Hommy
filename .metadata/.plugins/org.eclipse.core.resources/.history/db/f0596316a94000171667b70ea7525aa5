@@ -1,0 +1,15 @@
+package com.hommy.administrator.dao.interfaces;
+
+import com.hommy.administrator.dao.objects.Rule;
+import com.hommy.administrator.dao.objects.Rules;
+
+public interface IAction {
+
+	public Rules getAllActions();
+
+	public Rule getAction(int id);
+
+	public void addAction();
+
+	public void removeAction(int id);
+}

@@ -1,0 +1,12 @@
+package com.hommy.administrator.dao.impl;
+
+import com.hommy.administrator.dao.objects.Rule;
+
+public class TestClass {
+
+	public static void main(String[] args) {
+		Rule rules = new RulesOperation().getRuleByName("When I leave home");
+
+		System.out.println();
+	}
+}

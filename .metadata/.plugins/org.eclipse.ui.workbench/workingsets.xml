@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.mylyn.tasks.ui.workingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1495366200247_1" label="AdministratorService" name="AdministratorService">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/HommyAdministratorService" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1494185458108_0" label="Window Working Set" name="Aggregate for window 1494185458107">
+<workingSet IMemento.internal.id="AdministratorService"/>
+</workingSet>
+</workingSetManager>

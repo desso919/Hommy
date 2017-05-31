@@ -1,0 +1,5 @@
+package com.hommy.database;
+
+public class DatabaseConnection {
+
+}

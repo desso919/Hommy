@@ -1,0 +1,21 @@
+package com.hommy.administrator.dao.impl;
+
+import com.hommy.administrator.dao.objects.Devices;
+import com.hommy.administrator.dao.objects.Event;
+import com.hommy.administrator.dao.objects.Rule;
+import com.hommy.administrator.dao.objects.User;
+
+public class TestClass {
+
+	public static void main(String[] args) {
+		Rule rule = new Rule();
+		rule.setUser(new User(1, "Deso","desp", ""));
+		rule.setEvent(new Event(1, "", ""));
+		
+		rule.setDevices(new Devices().addDevice(new Device(1,"")));
+		
+		 new RulesOperation().addRule(rule)
+
+		System.out.println();
+	}
+}

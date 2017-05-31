@@ -1,0 +1,8 @@
+package com.hommy.service;
+
+import com.hommy.administrator.dao.objects.Devices;
+
+public class AllDevicesInNetwork {
+
+	private Devices devices = new Devices();
+}

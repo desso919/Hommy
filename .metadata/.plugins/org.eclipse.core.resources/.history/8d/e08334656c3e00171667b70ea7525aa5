@@ -1,0 +1,26 @@
+package com.hommy.administrator.service;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
+
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.hommy.administrator.dao.impl.Rules;
+import com.hommy.administrator.dao.objects.RulesManage;
+
+@Path("/admin")
+public class AdministratorService {
+
+	@GET
+	@Path("/rules")
+	@Produces(MediaType.APPLICATION_JSON)
+	public Response getAllRules() throws JsonProcessingException {
+		RulesManage rulesManagment = new Rules().getAllRules();
+
+		String allRules = rulesManagment.toJSON();
+
+		return Response.status(200).entity(allRules).build();
+	}
+}

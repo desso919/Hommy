@@ -1,0 +1,29 @@
+package com.hommy.service.subscribers;
+
+import com.hommy.service.interfaces.IDeviceSubscriber;
+import com.hommy.service.interfaces.ITopic;
+
+public abstract class DevcieSubscriber implements IDeviceSubscriber {
+
+	private String deviceName;
+	private ITopic topic;
+
+	public DevcieSubscriber(String name) {
+		this.deviceName = name;
+	}
+
+	@Override
+	public void update() {
+		String message = (String) topic.getUpdate(this);
+		if (message == null) {
+			System.out.println(deviceName + ":: No new message");
+		} else
+			System.out.println(deviceName + ":: Consuming message::" + message);
+	}
+
+	@Override
+	public void setTopic(ITopic topic) {
+		this.topic = topic;
+	}
+
+}

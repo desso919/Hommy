@@ -1,0 +1,10 @@
+package com.hommy.service.topics;
+
+public class TimeTopic extends Topic {
+
+	public TimeTopic() {
+		super("Time topic");
+		// TODO Auto-generated constructor stub
+	}
+
+}

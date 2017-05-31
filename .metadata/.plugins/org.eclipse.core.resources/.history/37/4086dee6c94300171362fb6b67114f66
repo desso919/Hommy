@@ -1,0 +1,23 @@
+package com.hommy.service;
+
+import com.hommy.service.interfaces.ITopic;
+
+public class ProcessPublicationQueue implements Runnable {
+	private boolean running = true;
+
+	public void stop() {
+		running = false;
+	}
+
+	@Override
+	public void run() {
+		
+		
+		Publication publication = PublicationQueue.pollPublication();
+		if(publication != null) {
+			ITopic topic = TopicsPool.getTopic(publication.getTopicName());
+			topic.publishMessage(publication.getMessage());
+		}
+	
+	}
+}

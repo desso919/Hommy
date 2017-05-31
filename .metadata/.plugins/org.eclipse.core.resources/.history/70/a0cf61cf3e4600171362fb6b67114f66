@@ -1,0 +1,10 @@
+package com.hommy.service.topics;
+
+public class NotificationTopic extends Topic {
+
+	public NotificationTopic(String topicName) {
+		super(topicName);
+		// TODO Auto-generated constructor stub
+	}
+
+}

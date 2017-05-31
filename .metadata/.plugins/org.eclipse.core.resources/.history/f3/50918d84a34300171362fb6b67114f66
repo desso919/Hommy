@@ -1,0 +1,5 @@
+package com.hommy.service.topics;
+
+public abstract class Topic extends ITopic{
+
+}

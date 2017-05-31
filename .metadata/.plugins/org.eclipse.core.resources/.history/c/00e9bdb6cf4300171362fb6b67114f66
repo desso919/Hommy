@@ -1,0 +1,31 @@
+package com.hommy.service;
+
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
+
+public class PublicationDispatcher {
+
+	private static ScheduledExecutorService executor;
+	private static boolean isStarted;
+
+	public static void start() {
+		if (isStarted) {
+			System.out.println("Starting publication dispatcher.");
+			executor = Executors.newScheduledThreadPool(10);
+			executor.scheduleAtFixedRate(new ProcessPublicationQueue(), 0, 3, TimeUnit.SECONDS);
+		} else {
+			System.out.println("Publication dispatcher is already started.");
+		}
+
+	}
+
+	public static void stop() {
+		if (isStarted) {
+			executor.shutdown();
+			isStarted = false;
+		}
+
+	}
+
+}

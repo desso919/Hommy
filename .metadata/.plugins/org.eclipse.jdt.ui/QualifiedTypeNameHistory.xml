@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.hommy.database.DatabaseConnection"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="java.sql.Statement"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="com.hommy.administrator.dao.impl.Rules"/>
+<fullyQualifiedTypeName name="org.eclipse.jdt.internal.compiler.batch.Main"/>
+<fullyQualifiedTypeName name="com.hommy.administrator.dao.impl.RulesDao"/>
+<fullyQualifiedTypeName name="com.hommy.administrator.dao.objects.RulesManage"/>
+<fullyQualifiedTypeName name="com.hommy.administrator.dao.objects.Protocol"/>
+<fullyQualifiedTypeName name="com.hommy.administrator.dao.interfaces.IAction"/>
+<fullyQualifiedTypeName name="com.hommy.administrator.dao.interfaces.IEvent"/>
+<fullyQualifiedTypeName name="javax.ws.rs.PathParam"/>
+<fullyQualifiedTypeName name="com.hommy.administrator.dao.impl.UsersOperation"/>
+<fullyQualifiedTypeName name="com.hommy.administrator.dao.objects.Events"/>
+<fullyQualifiedTypeName name="javax.ws.rs.QueryParam"/>
+<fullyQualifiedTypeName name="com.hommy.administrator.service.OperationResult"/>
+<fullyQualifiedTypeName name="com.hommy.administrator.service.Result"/>
+<fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+<fullyQualifiedTypeName name="com.hommy.administrator.dao.impl.ActionsOperation"/>
+<fullyQualifiedTypeName name="com.hommy.administrator.dao.impl.DevicesOperation"/>
+<fullyQualifiedTypeName name="com.hommy.administrator.dao.objects.Rules"/>
+<fullyQualifiedTypeName name="com.hommy.administrator.dao.impl.EventsOperation"/>
+<fullyQualifiedTypeName name="com.hommy.administrator.dao.objects.User"/>
+<fullyQualifiedTypeName name="com.hommy.administrator.dao.objects.Event"/>
+<fullyQualifiedTypeName name="com.hommy.administrator.dao.objects.Devices"/>
+<fullyQualifiedTypeName name="com.hommy.administrator.dao.objects.Device"/>
+<fullyQualifiedTypeName name="com.hommy.administrator.dao.objects.Action"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.hommy.administrator.dao.objects.Rule"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,48 @@
+package com.hommy.administrator.service;
+
+public class OperationResult {
+
+	private Result result;
+	private String resultMessage;
+	private String recommendedMessage;
+
+	public OperationResult(Result result) {
+		this.result = result;
+	}
+	
+	public OperationResult(Result result, String resultMessage) {
+		this(result);
+		this.resultMessage = resultMessage;
+	}
+
+	public OperationResult(Result result, String resultMessage, String recommendedMessage) {
+		this(result, resultMessage);
+		this.recommendedMessage = recommendedMessage;
+	}
+
+
+
+	public Result getResult() {
+		return result;
+	}
+
+	public void setResult(Result result) {
+		this.result = result;
+	}
+
+	public String getResultMessage() {
+		return resultMessage;
+	}
+
+	public void setResultMessage(String resultMessage) {
+		this.resultMessage = resultMessage;
+	}
+
+	public String getRecommendedMessage() {
+		return recommendedMessage;
+	}
+
+	public void setRecommendedMessage(String recommendedMessage) {
+		this.recommendedMessage = recommendedMessage;
+	}
+}

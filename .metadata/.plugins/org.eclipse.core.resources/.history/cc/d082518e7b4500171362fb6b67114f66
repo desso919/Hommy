@@ -1,0 +1,22 @@
+package com.hommy.service;
+
+import com.hommy.administrator.dao.objects.Device;
+import com.hommy.administrator.dao.objects.Devices;
+
+public class AllDevicesInNetwork {
+
+	private static Devices devices = new Devices();
+
+	public Devices getDevices() {
+		return devices;
+	}
+
+	public void setDevices(Devices devices) {
+		this.devices = devices;
+	}
+
+	public synchronized boolean add(Device device) {
+		return devices.addDevice(device);
+	}
+
+}

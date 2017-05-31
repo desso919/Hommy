@@ -1,0 +1,103 @@
+package com.hommy.service;
+
+import java.io.IOException;
+
+import javax.ws.rs.Consumes;
+import javax.ws.rs.POST;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
+
+import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.databind.JsonMappingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.hommy.administrator.dao.impl.DevicesOperation;
+import com.hommy.administrator.dao.objects.Device;
+import com.hommy.administrator.service.OperationResult;
+import com.hommy.administrator.service.Result;
+
+@Path("/service")
+public class HommyService {
+
+	@Path("/register")
+	@POST
+	@Consumes(MediaType.APPLICATION_JSON)
+	@Produces(MediaType.APPLICATION_JSON)
+	public Response registerDevice(final String device) throws JsonParseException, JsonMappingException, IOException {
+		ObjectMapper mapper = new ObjectMapper();
+		boolean isAddedSuccessfully = false;
+
+		if (device != null) {
+			Device newDevice = mapper.readValue(device, Device.class);
+			isAddedSuccessfully = new DevicesOperation().addDevice(newDevice);
+			// register
+		}
+
+		if (isAddedSuccessfully) {
+			return Response.status(200).entity(new OperationResult(Result.OK).toJSON()).build();
+		} else {
+			return Response.status(200).entity(new OperationResult(Result.FAILED).toJSON()).build();
+		}
+	}
+
+	@Path("/unregister")
+	@POST
+	@Consumes(MediaType.APPLICATION_JSON)
+	@Produces(MediaType.APPLICATION_JSON)
+	public Response unregisterDevice(final String device) throws JsonParseException, JsonMappingException, IOException {
+		ObjectMapper mapper = new ObjectMapper();
+		boolean isAddedSuccessfully = false;
+
+		if (device != null) {
+			Device newDevice = mapper.readValue(device, Device.class);
+			isAddedSuccessfully = new DevicesOperation().addDevice(newDevice);
+		}
+
+		if (isAddedSuccessfully) {
+			return Response.status(200).entity(new OperationResult(Result.OK).toJSON()).build();
+		} else {
+			return Response.status(200).entity(new OperationResult(Result.FAILED).toJSON()).build();
+		}
+	}
+
+	@Path("/publish")
+	@POST
+	@Consumes(MediaType.APPLICATION_JSON)
+	@Produces(MediaType.APPLICATION_JSON)
+	public Response publish(final String publication) throws JsonParseException, JsonMappingException, IOException {
+		ObjectMapper mapper = new ObjectMapper();
+		boolean isAddedSuccessfully = false;
+
+		if (topic != null) {
+			Device newDevice = mapper.readValue(topic, Device.class);
+			isAddedSuccessfully = new DevicesOperation().addDevice(newDevice);
+		}
+
+		if (isAddedSuccessfully) {
+			return Response.status(200).entity(new OperationResult(Result.OK).toJSON()).build();
+		} else {
+			return Response.status(200).entity(new OperationResult(Result.FAILED).toJSON()).build();
+		}
+	}
+
+	@Path("/request")
+	@POST
+	@Consumes(MediaType.APPLICATION_JSON)
+	@Produces(MediaType.APPLICATION_JSON)
+	public Response receiveRequests(final String device) throws JsonParseException, JsonMappingException, IOException {
+		ObjectMapper mapper = new ObjectMapper();
+		boolean isAddedSuccessfully = false;
+
+		if (device != null) {
+			Device newDevice = mapper.readValue(device, Device.class);
+			isAddedSuccessfully = new DevicesOperation().addDevice(newDevice);
+		}
+
+		if (isAddedSuccessfully) {
+			return Response.status(200).entity(new OperationResult(Result.OK).toJSON()).build();
+		} else {
+			return Response.status(200).entity(new OperationResult(Result.FAILED).toJSON()).build();
+		}
+	}
+}

@@ -1,0 +1,36 @@
+package com.hommy.service;
+
+import com.hommy.service.interfaces.IDeviceSubscriber;
+import com.hommy.service.interfaces.ITopic;
+import com.hommy.service.subscribers.AirConditioner;
+import com.hommy.service.subscribers.AlarmClock;
+import com.hommy.service.subscribers.TV;
+import com.hommy.service.topics.TemperatureTopic;
+import com.hommy.service.topics.TimeTopic;
+
+public class ObserverPatternTest {
+
+	public static void main(String[] args) {
+		// create subject
+		ITopic tempTopic = new TemperatureTopic();
+		ITopic timeTopic = new TimeTopic();
+
+		// create observers
+		IDeviceSubscriber airConditioner = new AirConditioner("Air Conditioner");
+		IDeviceSubscriber tv = new TV("TV");
+		IDeviceSubscriber alarmClock = new AlarmClock("Alarm Clock");
+
+		// register observers to the subject
+		tempTopic.register(airConditioner);
+
+		timeTopic.register(tv);
+		timeTopic.register(alarmClock);
+
+		// attach observer to subject
+		airConditioner.setTopic(tempTopic);
+		alarmClock.setTopic(timeTopic);
+
+		// now send message to subject
+		tempTopic.publishMessage("Temperature changed to: 24C");
+	}
+}

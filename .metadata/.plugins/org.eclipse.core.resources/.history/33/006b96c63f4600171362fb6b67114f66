@@ -1,0 +1,9 @@
+package com.hommy.service.topics;
+
+public class NotificationTopic extends Topic {
+
+	public NotificationTopic(String topicName) {
+		super("Notification Topic");
+	}
+
+}

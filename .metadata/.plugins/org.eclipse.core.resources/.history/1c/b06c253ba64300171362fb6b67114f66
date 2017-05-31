@@ -1,0 +1,7 @@
+package com.hommy.service.topics;
+
+import com.hommy.service.interfaces.ITopic;
+
+public abstract class Topic implements ITopic {
+
+}

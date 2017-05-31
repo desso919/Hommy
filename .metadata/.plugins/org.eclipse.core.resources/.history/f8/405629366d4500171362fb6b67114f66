@@ -1,0 +1,7 @@
+package com.hommy.service;
+
+public class FindDevicesInTheNetwork implements Runnable {
+
+	private String ip;
+
+}

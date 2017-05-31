@@ -1,0 +1,16 @@
+package com.hommy.administrator.dao.impl;
+
+import com.hommy.administrator.dao.objects.Action;
+import com.hommy.administrator.dao.objects.Rules;
+
+public class TestClass {
+
+	public static void main(String[] args) {
+		Rules rules = new RulesOperation().getRulesNameForUser(1);
+
+		for (Rule string : rules.getRules()) {
+			
+		}
+
+	}
+}

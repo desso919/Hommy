@@ -1,0 +1,11 @@
+package com.hommy.service.interfaces;
+
+import com.hommy.service.ISubject;
+
+public interface IDeviceSubscriber {
+	// method to update the observer, used by subject
+	public void update();
+
+	// attach with subject to observe
+	public void setSubject(ISubject sub);
+}

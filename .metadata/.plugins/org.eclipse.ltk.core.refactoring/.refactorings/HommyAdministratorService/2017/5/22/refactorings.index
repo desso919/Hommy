@@ -1,0 +1,33 @@
+1495974000111	Rename local variable 'registerDevice'
+1495974039736	Rename local variable 'device'
+1495974767898	Delete element
+1495976715618	Rename field 'observers'
+1495976728927	Rename field 'changed'
+1495978064406	Rename local variable 'obj'
+1495978142650	Rename method 'postMessage'
+1495978166817	Rename local variable 'msg'
+1495980985455	Rename method 'setSubject'
+1495981119504	Rename local variable 'nm'
+1495981140087	Rename local variable 'msg'
+1495981197480	Rename field 'name'
+1495981206694	Rename field 'Devicename'
+1495981213984	Rename local variable 'name'
+1495983741837	Rename field 'Message'
+1495984459030	Rename field 'topic'
+1495984994275	Rename method 'getTopic'
+1495985005257	Rename method 'setTopic'
+1495985110316	Rename local variable 'isAddedSuccessfully'
+1495990025797	Delete element
+1495990171510	Delete element
+1495990175304	Delete element
+1495990179046	Delete element
+1495990181981	Delete element
+1495990187548	Delete element
+1495990195976	Delete element
+1495992786279	Rename field 'running'
+1495997491093	Rename field 'executor'
+1495997520551	Rename field 'timmer'
+1495999066064	Rename field 'timer'
+1496000087383	Extract constant 'NUMBER_OF_THREAD_TO_KEEP_IN_THE_POOL'
+1496000140312	Extract constant 'DEFAULT_PERIOD_OF_RUNNING'
+1496172183503	Rename field 'ip'

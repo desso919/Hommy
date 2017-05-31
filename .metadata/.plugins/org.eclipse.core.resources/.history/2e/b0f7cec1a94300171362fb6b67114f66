@@ -1,0 +1,9 @@
+package com.hommy.service.topics;
+
+import java.util.List;
+
+import com.hommy.service.interfaces.IDeviceSubscriber;
+
+public class TemperatureTopic extends Topic {
+
+}

@@ -43,7 +43,7 @@ public class EventsService {
 		}
 
 		if (event != null) {
-			return Response.status(200).entity(event).build();
+			return Response.status(200).entity(event.toJSON()).build();
 		} else {
 			return Response.status(200)
 					.entity(new OperationResult(Result.FAILED, "Could not find an event with this name").toJSON())

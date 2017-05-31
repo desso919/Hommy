@@ -1,0 +1,18 @@
+package com.hommy.service.topics;
+
+public class TimeTopic extends Topic {
+
+	private TimeTopic instance;
+
+	private TimeTopic() {
+		super("Time topic");
+	}
+
+	public static TimeTopic getInstance() {
+		if (instance != null) {
+			return new TimeTopic();
+		} else {
+			return instance;
+		}
+	}
+}

@@ -1,0 +1,9 @@
+package com.hommy.service.topics;
+
+public class TimeTopic extends Topic {
+
+	private TimeTopic() {
+		super("Time topic");
+	}
+
+}

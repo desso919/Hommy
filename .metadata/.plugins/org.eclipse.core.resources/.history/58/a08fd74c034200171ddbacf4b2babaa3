@@ -1,0 +1,8 @@
+package com.hommy.administrator.service;
+
+import javax.ws.rs.Path;
+
+@Path("/rules")
+public class RulesService {
+
+}

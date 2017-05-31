@@ -1,0 +1,15 @@
+package com.hommy.service.interfaces;
+
+public interface IDeviceSubscriber {
+
+	/**
+	 * This method updates the subscriber, used by topics
+	 */
+	public void update();
+
+	/**
+	 * @param attach
+	 *            with subject to observe
+	 */
+	public void setSubject(ITopic topic);
+}
