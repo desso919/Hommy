@@ -1,8 +1,0 @@
-package com.hommy.administrator.service;
-
-import javax.ws.rs.Path;
-
-@Path("/events")
-public class RulesService {
-
-}

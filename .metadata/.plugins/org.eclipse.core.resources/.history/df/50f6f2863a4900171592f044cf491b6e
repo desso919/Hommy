@@ -1,0 +1,6 @@
+package com.hommy.utils;
+
+public class MessageData {
+
+	private String message;
+}

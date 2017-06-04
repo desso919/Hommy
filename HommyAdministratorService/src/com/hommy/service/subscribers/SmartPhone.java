@@ -1,5 +1,9 @@
 package com.hommy.service.subscribers;
 
+import com.hommy.utils.HTTPUtil;
+import com.hommy.utils.HommyUtil;
+import com.hommy.utils.Message;
+
 public class SmartPhone extends DevcieSubscriber {
 
 	public SmartPhone() {
@@ -11,9 +15,12 @@ public class SmartPhone extends DevcieSubscriber {
 		String message = (String) super.getTopic().getUpdate(this);
 		if (message == null) {
 			System.out.println(super.getDeviceName() + ":: No new message");
-		} else
-			System.out.println(super.getDeviceName() + ":: Consuming message::" + message);
-
+		} else {
+			System.out.println(super.getDeviceName() + ":: Consuming message from Smartphone::" + message);
+			Message massageToSend = new Message(HommyUtil.DEVICE_TOKEN);
+			massageToSend.add("message", message);
+			boolean isSend = HTTPUtil.sendMessage(massageToSend);
+			System.out.println("IS SEND? " + isSend);
+		}
 	}
-
 }

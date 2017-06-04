@@ -1,6 +1,0 @@
-package com.hommy.administrator.service;
-
-public class Util {
-
-	private static final String EMPTY_JSON = "{}";
-}

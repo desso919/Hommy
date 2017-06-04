@@ -2,9 +2,10 @@ package com.hommy.service;
 
 import java.io.IOException;
 import java.net.InetAddress;
+import java.net.NetworkInterface;
+import java.net.SocketException;
 import java.net.UnknownHostException;
-
-import com.hommy.administrator.dao.objects.Device;
+import java.util.Enumeration;
 
 public class ObserverPatternTest {
 
@@ -34,17 +35,44 @@ public class ObserverPatternTest {
 		// tempTopic.publishMessage("Temperature changed to: 24C");
 		// timeTopic.publishMessage("Time now is 11:00 AM");
 
-		String subnet = getSubnet(InetAddress.getLocalHost().toString());
-		checkHosts(subnet);
+		String ip;
+		try {
+			Enumeration<NetworkInterface> interfaces = NetworkInterface.getNetworkInterfaces();
+			while (interfaces.hasMoreElements()) {
+				NetworkInterface iface = interfaces.nextElement();
+				// filters out 127.0.0.1 and inactive interfaces
+				if (iface.isLoopback() || !iface.isUp())
+					continue;
 
-		System.out.println("Founded ip in this network:");
+				System.out.println("NAME: " + iface.getName());
 
-		Thread.sleep(5000);
-		for (Device device : AllDevicesInNetwork.getDevices()) {
+				Enumeration<InetAddress> addresses = iface.getInetAddresses();
+				while (addresses.hasMoreElements()) {
 
-			System.out.println(device.getName());
+					InetAddress addr = addresses.nextElement();
+					ip = addr.getHostAddress();
 
+					System.out.println(iface.getDisplayName() + " " + ip);
+				}
+			}
+		} catch (SocketException e) {
+			throw new RuntimeException(e);
 		}
+
+		//
+		//
+		//
+		// String subnet = getSubnet(InetAddress.getLocalHost().toString());
+		// checkHosts(subnet);
+		//
+		// System.out.println("Founded ip in this network:");
+		//
+		// Thread.sleep(5000);
+		// for (Device device : AllDevicesInNetwork.getDevices()) {
+		//
+		// System.out.println(device.getName());
+		//
+		// }
 
 	}
 

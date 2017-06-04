@@ -1,0 +1,6 @@
+package com.hommy.utils;
+
+public class MessageResponse {
+
+	private String multicast_id;
+}

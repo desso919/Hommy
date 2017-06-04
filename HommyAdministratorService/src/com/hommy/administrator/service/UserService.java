@@ -10,6 +10,7 @@ import javax.ws.rs.core.Response;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.hommy.administrator.dao.impl.UsersOperation;
 import com.hommy.administrator.dao.objects.User;
+import com.hommy.utils.HommyUtil;
 
 @Path("/users")
 public class UserService {
@@ -25,7 +26,7 @@ public class UserService {
 			String result = user.toJSON();
 			return Response.status(200).entity(result).build();
 		} else {
-			return Response.status(200).entity(Util.EMPTY_JSON).build();
+			return Response.status(200).entity(HommyUtil.EMPTY_JSON).build();
 		}
 	}
 }

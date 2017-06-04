@@ -1,7 +1,0 @@
-package com.hommy.administrator.dao.impl;
-
-import com.hommy.administrator.dao.interfaces.IUser;
-
-public class UsersOperation implements IUser {
-
-}

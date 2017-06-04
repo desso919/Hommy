@@ -1,0 +1,8 @@
+package com.hommy.utils;
+
+public class HTTPUtil {
+
+	public static void sendMessage() {
+
+	}
+}

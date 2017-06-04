@@ -1,8 +1,0 @@
-package com.hommy.administrator.service;
-
-public class OperationResult {
-
-	private Result result;
-	private String message;
-	private String recommended;
-}

@@ -1,0 +1,7 @@
+package com.hommy.utils;
+
+public class Message {
+
+	private String to;
+	private String data;
+}

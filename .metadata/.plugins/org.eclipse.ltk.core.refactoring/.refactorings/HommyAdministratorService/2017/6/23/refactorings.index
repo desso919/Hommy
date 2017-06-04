@@ -1,0 +1,5 @@
+1496587093664	Delete element
+1496596560738	Rename type 'GooleResponse'
+1496596848471	Rename local variable 'response'
+1496597205356	Extract method 'isSuccessfullyReceived'
+1496598372638	Rename local variable 'data'

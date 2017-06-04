@@ -1,0 +1,10 @@
+package com.hommy.utils;
+
+public class MessageResponse {
+
+	private String multicast_id;
+	private String success;
+	private String failure;
+	private String canonical_ids;
+	
+}
