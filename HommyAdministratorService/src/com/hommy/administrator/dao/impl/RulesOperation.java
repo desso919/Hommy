@@ -14,18 +14,19 @@ import com.hommy.administrator.dao.objects.Device;
 import com.hommy.administrator.dao.objects.Devices;
 import com.hommy.administrator.dao.objects.Event;
 import com.hommy.administrator.dao.objects.Rule;
+import com.hommy.administrator.dao.objects.RuleDao;
 import com.hommy.administrator.dao.objects.Rules;
-import com.hommy.database.DatabaseConnection;
+import com.hommy.database.DatabaseManager;
 
 public class RulesOperation implements IRule {
 
 	static {
-		DatabaseConnection.initialize();
+		DatabaseManager.initialize();
 	}
 
 	@Override
 	public Rules getAllRules() {
-		Connection connection = DatabaseConnection.createConnection();
+		Connection connection = DatabaseManager.createConnection();
 		List<Rule> rules = new ArrayList<Rule>();
 		Rules rulesManage = new Rules();
 
@@ -56,7 +57,7 @@ public class RulesOperation implements IRule {
 	}
 
 	public void getRuleForUserAndDevice(int userId, int DeviceId) {
-		Connection connection = DatabaseConnection.createConnection();
+		Connection connection = DatabaseManager.createConnection();
 		Rules rulesManage = new Rules();
 
 		String query = "select * from rules where userId=? and deviceId=?";
@@ -83,7 +84,7 @@ public class RulesOperation implements IRule {
 	}
 
 	public Rule getRuleByName(String name) {
-		Connection connection = DatabaseConnection.createConnection();
+		Connection connection = DatabaseManager.createConnection();
 		Devices devices = new Devices();
 		Rule rule = new Rule();
 
@@ -126,7 +127,7 @@ public class RulesOperation implements IRule {
 	}
 
 	public Rules getRulesNameForUser(int userId) {
-		Connection connection = DatabaseConnection.createConnection();
+		Connection connection = DatabaseManager.createConnection();
 		Rules rulesManage = new Rules();
 
 		String query = "select UNIQUE ruleName from rules where userId=?";
@@ -160,7 +161,7 @@ public class RulesOperation implements IRule {
 
 	@Override
 	public boolean addRule(Rule rule) {
-		Connection connection = DatabaseConnection.createConnection();
+		Connection connection = DatabaseManager.createConnection();
 
 		String ruleName = rule.getName();
 		int userId = rule.getUser().getId();
@@ -182,6 +183,33 @@ public class RulesOperation implements IRule {
 			}
 		}
 		return true;
+	}
+
+	public boolean addRuleDao(RuleDao rule) {
+		Connection connection = DatabaseManager.createConnection();
+
+		String insertSQL = "INSERT INTO RULES(USERID, EVENTID, DEVICEID, ACTIONID, RULENAME, EXECUTIONORDER) VALUES (?, ?, ?, ?, ?, ?)";
+		int result = 0;
+
+		try {
+			PreparedStatement preparedStatement = connection.prepareStatement(insertSQL);
+
+			preparedStatement.setInt(1, rule.getUserId());
+			preparedStatement.setInt(2, rule.getEventId());
+			preparedStatement.setInt(3, rule.getDeviceId());
+			preparedStatement.setInt(4, rule.getActionId());
+			preparedStatement.setString(5, rule.getRuleName());
+			preparedStatement.setInt(6, 1);
+
+			result = preparedStatement.executeUpdate();
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		if (result == 1) {
+			return true;
+		}
+		return false;
 	}
 
 	public boolean addRuleDeviceActions(Connection connection, int userId, int eventId, int deviceId, int actionId,

@@ -1,0 +1,9 @@
+package com.hommy.administrator.dao.objects;
+
+public class RuleDao {
+
+	private int userId;
+	private int eventId;
+	private int deviceId;
+	private int actionId;
+}

@@ -8,17 +8,17 @@ import java.sql.SQLException;
 import com.hommy.administrator.dao.interfaces.IEvent;
 import com.hommy.administrator.dao.objects.Event;
 import com.hommy.administrator.dao.objects.Events;
-import com.hommy.database.DatabaseConnection;
+import com.hommy.database.DatabaseManager;
 
 public class EventsOperation implements IEvent {
 
 	static {
-		DatabaseConnection.initialize();
+		DatabaseManager.initialize();
 	}
 
 	@Override
 	public Events getAllEvents() {
-		Connection connection = DatabaseConnection.createConnection();
+		Connection connection = DatabaseManager.createConnection();
 		Events events = new Events();
 
 		String query = "select * from events";
@@ -74,7 +74,7 @@ public class EventsOperation implements IEvent {
 
 	@Override
 	public Event getEvent(String name) {
-		Connection connection = DatabaseConnection.createConnection();
+		Connection connection = DatabaseManager.createConnection();
 
 		String query = "select * from events where eventname=?";
 
@@ -106,15 +106,16 @@ public class EventsOperation implements IEvent {
 
 	@Override
 	public boolean addEvent(Event event) {
-		Connection connection = DatabaseConnection.createConnection();
+		Connection connection = DatabaseManager.createConnection();
 		int result = 0;
 
-		String insertSQL = "INSERT INTO Events (eventname, description) VALUES (?, ?)";
+		String insertSQL = "INSERT INTO Events (eventname, description, triggeredBy) VALUES (?, ?, ?)";
 
 		try {
 			PreparedStatement preparedStatement = connection.prepareStatement(insertSQL);
 			preparedStatement.setString(1, event.getName());
 			preparedStatement.setString(2, event.getDescription());
+			preparedStatement.setString(3, event.getTriggeredBy());
 			result = preparedStatement.executeUpdate();
 
 		} catch (SQLException e) {
@@ -128,7 +129,7 @@ public class EventsOperation implements IEvent {
 
 	@Override
 	public boolean removeEvent(int id) {
-		Connection connection = DatabaseConnection.createConnection();
+		Connection connection = DatabaseManager.createConnection();
 		int result = 0;
 
 		String query = "delete from events where id=?";

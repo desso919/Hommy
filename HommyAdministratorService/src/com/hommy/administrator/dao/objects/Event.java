@@ -8,6 +8,7 @@ public class Event {
 	private int id;
 	private String name;
 	private String description;
+	private String triggeredBy;
 
 	public Event() {
 	}
@@ -44,6 +45,14 @@ public class Event {
 
 	public void setDescription(String description) {
 		this.description = description;
+	}
+
+	public String getTriggeredBy() {
+		return triggeredBy;
+	}
+
+	public void setTriggeredBy(String triggeredBy) {
+		this.triggeredBy = triggeredBy;
 	}
 
 	public String toJSON() throws JsonProcessingException {

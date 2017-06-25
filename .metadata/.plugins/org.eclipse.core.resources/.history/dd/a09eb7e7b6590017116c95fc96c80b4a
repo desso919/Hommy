@@ -1,0 +1,39 @@
+package com.hommy.administrator.dao.impl;
+
+import com.hommy.administrator.dao.objects.Device;
+
+public class TestClass {
+
+	public static void main(String[] args) {
+		DevicesOperation op = new DevicesOperation();
+		Device dev = op.getDevice("Acer Laptop E1-570G");
+
+		System.out.println(dev.getActions());
+
+		// Rule rule = new Rule();
+		// rule.setName("When I am coming home");
+		// rule.setUser(new User(1, "Deso", "desp", ""));
+		// rule.setEvent(new Event(2, "", ""));
+		//
+		// Devices devices = new Devices();
+		// Device dev = new Device(2, "");
+		// Action act = new Action(1, "");
+		// Action act2 = new Action(5, "");
+		// act.setExecutionOrder(1);
+		// act2.setExecutionOrder(2);
+		//
+		// List<Action> actions = new ArrayList<Action>();
+		// actions.add(act);
+		// actions.add(act2);
+		//
+		// dev.setActions(actions);
+		//
+		// devices.addDevice(dev);
+		//
+		// rule.setDevices(devices);
+		//
+		// boolean result = new RulesOperation().addRule(rule);
+		//
+		// System.out.println();
+	}
+}

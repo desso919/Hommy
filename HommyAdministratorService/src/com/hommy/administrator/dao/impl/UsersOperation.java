@@ -7,17 +7,17 @@ import java.sql.SQLException;
 
 import com.hommy.administrator.dao.interfaces.IUser;
 import com.hommy.administrator.dao.objects.User;
-import com.hommy.database.DatabaseConnection;
+import com.hommy.database.DatabaseManager;
 
 public class UsersOperation implements IUser {
 
 	static {
-		DatabaseConnection.initialize();
+		DatabaseManager.initialize();
 	}
 
 	@Override
 	public User getUser(String username, String password) {
-		Connection connection = DatabaseConnection.createConnection();
+		Connection connection = DatabaseManager.createConnection();
 
 		String query = "select * from users where username=? and password=?";
 

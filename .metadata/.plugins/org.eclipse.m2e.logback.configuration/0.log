@@ -6399,3 +6399,199 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact com.oracle:oj
 2017-06-04 21:08:45,308 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\main\resources
 2017-06-04 21:08:45,309 [Worker-102] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
 2017-06-04 21:08:45,315 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\test\resources
+2017-06-18 22:15:56,479 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-18 22:15:56,513 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\main\resources
+2017-06-18 22:15:56,520 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-18 22:15:56,534 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\test\resources
+2017-06-18 22:20:29,454 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-18 22:20:29,493 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\main\resources
+2017-06-18 22:20:29,496 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-18 22:20:29,504 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\test\resources
+2017-06-18 22:20:41,648 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-18 22:20:41,683 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\main\resources
+2017-06-18 22:20:41,685 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-18 22:20:41,693 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\test\resources
+2017-06-18 22:21:07,953 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-18 22:21:08,002 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\main\resources
+2017-06-18 22:21:08,005 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-18 22:21:08,017 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\test\resources
+2017-06-18 22:21:57,294 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-18 22:21:57,325 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\main\resources
+2017-06-18 22:21:57,327 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-18 22:21:57,340 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\test\resources
+2017-06-18 22:22:04,815 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-18 22:22:04,906 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\main\resources
+2017-06-18 22:22:04,913 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-18 22:22:04,920 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\test\resources
+2017-06-18 22:22:27,272 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-18 22:22:27,312 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\main\resources
+2017-06-18 22:22:27,315 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-18 22:22:27,327 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\test\resources
+2017-06-18 22:23:18,383 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-18 22:23:18,545 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\main\resources
+2017-06-18 22:23:18,557 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-18 22:23:18,575 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\test\resources
+2017-06-18 22:23:35,944 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-18 22:23:35,954 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\main\resources
+2017-06-18 22:23:35,957 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-18 22:23:35,969 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\test\resources
+2017-06-18 22:24:12,121 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-18 22:24:12,138 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\main\resources
+2017-06-18 22:24:12,148 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-18 22:24:12,157 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\test\resources
+2017-06-18 22:24:26,510 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-18 22:24:26,517 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\main\resources
+2017-06-18 22:24:26,519 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-18 22:24:26,525 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\test\resources
+2017-06-18 22:49:30,317 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-18 22:49:30,345 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\main\resources
+2017-06-18 22:49:30,352 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-18 22:49:30,359 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\test\resources
+2017-06-18 22:55:09,509 [Worker-30] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-18 22:55:09,519 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\main\resources
+2017-06-18 22:55:09,521 [Worker-30] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-18 22:55:09,531 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\test\resources
+2017-06-18 23:54:04,941 [Worker-48] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-18 23:54:04,957 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\main\resources
+2017-06-18 23:54:04,957 [Worker-48] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-18 23:54:04,972 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\test\resources
+2017-06-19 20:34:31,087 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-19 20:34:31,144 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\main\resources
+2017-06-19 20:34:31,147 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-19 20:34:31,154 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\test\resources
+2017-06-24 19:21:00,332 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-24 19:21:00,384 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\main\resources
+2017-06-24 19:21:00,389 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-24 19:21:00,401 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\test\resources
+2017-06-24 19:32:06,074 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-24 19:32:06,105 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\main\resources
+2017-06-24 19:32:06,121 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-24 19:32:06,121 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\test\resources
+2017-06-24 20:56:32,965 [Worker-53] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-24 20:56:32,983 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\main\resources
+2017-06-24 20:56:32,999 [Worker-53] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-24 20:56:32,999 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\test\resources
+2017-06-24 22:33:03,424 [Worker-71] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-24 22:33:03,555 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\main\resources
+2017-06-24 22:33:03,555 [Worker-71] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-24 22:33:03,571 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\test\resources
+2017-06-24 22:33:34,005 [Worker-72] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-24 22:33:34,005 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\main\resources
+2017-06-24 22:33:34,005 [Worker-72] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-24 22:33:34,021 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\test\resources
+2017-06-25 12:14:11,364 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 12:14:11,495 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\main\resources
+2017-06-25 12:14:11,502 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 12:14:11,523 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\test\resources
+2017-06-25 15:31:10,654 [Worker-67] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 15:31:10,803 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\main\resources
+2017-06-25 15:31:10,806 [Worker-67] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 15:31:10,815 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\test\resources
+2017-06-25 15:31:45,435 [Worker-72] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 15:31:45,452 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\main\resources
+2017-06-25 15:31:45,462 [Worker-72] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 15:31:45,485 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\test\resources
+2017-06-25 17:11:43,305 [Worker-104] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 17:11:43,672 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\main\resources
+2017-06-25 17:11:43,675 [Worker-104] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 17:11:43,689 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\test\resources
+2017-06-25 17:13:02,657 [Worker-109] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 17:13:02,708 [Worker-109] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\main\resources
+2017-06-25 17:13:02,711 [Worker-109] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 17:13:02,727 [Worker-109] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\test\resources
+2017-06-25 17:17:59,726 [Worker-112] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 17:17:59,831 [Worker-112] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\main\resources
+2017-06-25 17:17:59,852 [Worker-112] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 17:17:59,880 [Worker-112] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\test\resources
+2017-06-25 17:58:42,335 [Worker-132] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 17:58:42,355 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\main\resources
+2017-06-25 17:58:42,357 [Worker-132] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 17:58:42,364 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\test\resources
+2017-06-25 17:59:37,993 [Worker-135] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 17:59:38,020 [Worker-135] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\main\resources
+2017-06-25 17:59:38,033 [Worker-135] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 17:59:38,041 [Worker-135] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\test\resources
+2017-06-25 17:59:48,293 [Worker-131] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 17:59:48,326 [Worker-131] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\main\resources
+2017-06-25 17:59:48,329 [Worker-131] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 17:59:48,340 [Worker-131] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\test\resources
+2017-06-25 18:12:19,636 [Worker-144] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 18:12:19,687 [Worker-144] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\main\resources
+2017-06-25 18:12:19,688 [Worker-144] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 18:12:19,704 [Worker-144] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\test\resources
+2017-06-25 18:12:24,633 [Worker-144] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 18:12:24,633 [Worker-144] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\main\resources
+2017-06-25 18:12:24,633 [Worker-144] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 18:12:24,648 [Worker-144] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\test\resources
+2017-06-25 18:34:19,562 [Worker-148] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 18:34:19,593 [Worker-148] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\main\resources
+2017-06-25 18:34:19,611 [Worker-148] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 18:34:19,621 [Worker-148] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\test\resources
+2017-06-25 18:34:44,844 [Worker-150] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 18:34:44,854 [Worker-150] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\main\resources
+2017-06-25 18:34:44,857 [Worker-150] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 18:34:44,867 [Worker-150] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\test\resources
+2017-06-25 18:35:06,797 [Worker-147] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 18:35:06,816 [Worker-147] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\main\resources
+2017-06-25 18:35:06,830 [Worker-147] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 18:35:06,847 [Worker-147] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\test\resources
+2017-06-25 18:43:55,646 [Worker-157] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 18:43:55,698 [Worker-157] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\main\resources
+2017-06-25 18:43:55,698 [Worker-157] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 18:43:55,713 [Worker-157] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\test\resources
+2017-06-25 18:46:17,018 [Worker-154] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 18:46:17,055 [Worker-154] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\main\resources
+2017-06-25 18:46:17,065 [Worker-154] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 18:46:17,076 [Worker-154] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\test\resources
+2017-06-25 18:46:59,046 [Worker-147] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 18:46:59,087 [Worker-147] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\main\resources
+2017-06-25 18:46:59,089 [Worker-147] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 18:46:59,100 [Worker-147] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\test\resources
+2017-06-25 18:47:15,587 [Worker-147] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 18:47:15,601 [Worker-147] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\main\resources
+2017-06-25 18:47:15,612 [Worker-147] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 18:47:15,623 [Worker-147] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\test\resources
+2017-06-25 18:47:26,201 [Worker-155] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 18:47:26,213 [Worker-155] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\main\resources
+2017-06-25 18:47:26,219 [Worker-155] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 18:47:26,229 [Worker-155] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\test\resources
+2017-06-25 18:48:10,148 [Worker-160] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 18:48:10,178 [Worker-160] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\main\resources
+2017-06-25 18:48:10,187 [Worker-160] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 18:48:10,194 [Worker-160] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\test\resources
+2017-06-25 18:48:14,485 [Worker-158] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 18:48:14,528 [Worker-158] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\main\resources
+2017-06-25 18:48:14,530 [Worker-158] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 18:48:14,546 [Worker-158] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\test\resources
+2017-06-25 18:48:27,511 [Worker-147] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 18:48:27,555 [Worker-147] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\main\resources
+2017-06-25 18:48:27,565 [Worker-147] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 18:48:27,576 [Worker-147] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\test\resources
+2017-06-25 18:49:33,291 [Worker-157] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 18:49:33,312 [Worker-157] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\main\resources
+2017-06-25 18:49:33,315 [Worker-157] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 18:49:33,329 [Worker-157] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\test\resources
+2017-06-25 18:50:15,063 [Worker-158] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 18:50:15,089 [Worker-158] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\main\resources
+2017-06-25 18:50:15,101 [Worker-158] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 18:50:15,113 [Worker-158] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\test\resources
+2017-06-25 18:50:24,951 [Worker-147] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 18:50:24,966 [Worker-147] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\main\resources
+2017-06-25 18:50:24,968 [Worker-147] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 18:50:24,978 [Worker-147] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\test\resources
+2017-06-25 18:51:27,026 [Worker-158] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 18:51:27,045 [Worker-158] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\main\resources
+2017-06-25 18:51:27,056 [Worker-158] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 18:51:27,066 [Worker-158] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\test\resources
+2017-06-25 18:51:54,614 [Worker-158] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 18:51:54,623 [Worker-158] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\main\resources
+2017-06-25 18:51:54,628 [Worker-158] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 18:51:54,637 [Worker-158] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\test\resources
+2017-06-25 18:51:59,889 [Worker-154] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 18:51:59,906 [Worker-154] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\main\resources
+2017-06-25 18:51:59,915 [Worker-154] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 18:51:59,928 [Worker-154] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\test\resources
+2017-06-25 18:52:04,609 [Worker-158] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 18:52:04,619 [Worker-158] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\main\resources
+2017-06-25 18:52:04,621 [Worker-158] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-25 18:52:04,631 [Worker-158] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Äåñèñëàâ\Documents\GitHub\HommyProject\Hommy\HommyAdministratorService\src\test\resources

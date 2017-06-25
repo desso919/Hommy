@@ -1,8 +1,0 @@
-package com.hommy.service;
-
-public class Message {
-	private int id;
-	private MessageType;
-	private String additionalInfo;
-
-}

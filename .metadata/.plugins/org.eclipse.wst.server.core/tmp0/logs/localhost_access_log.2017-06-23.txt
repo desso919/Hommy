@@ -1,0 +1,6 @@
+0:0:0:0:0:0:0:1 - - [23/Jun/2017:15:11:20 +0300] "GET /HommyAdministratorService/hommy/users/login?username=%D0%B4%D0%B5%D1%81%D0%BE&password=deso HTTP/1.1" 200 12
+0:0:0:0:0:0:0:1 - - [23/Jun/2017:15:11:33 +0300] "GET /HommyAdministratorService/hommy/users/login?username=deso&password=deso HTTP/1.1" 200 92
+0:0:0:0:0:0:0:1 - - [23/Jun/2017:15:11:35 +0300] "GET /HommyAdministratorService/hommy/rules?userId=1 HTTP/1.1" 200 206
+0:0:0:0:0:0:0:1 - - [23/Jun/2017:15:12:45 +0300] "GET /HommyAdministratorService/hommy/users/login?username=deso&password=deso HTTP/1.1" 200 92
+0:0:0:0:0:0:0:1 - - [23/Jun/2017:15:12:52 +0300] "GET /HommyAdministratorService/hommy/events HTTP/1.1" 200 210
+0:0:0:0:0:0:0:1 - - [23/Jun/2017:15:15:22 +0300] "GET /HommyAdministratorService/hommy/users/login?username=desislav&password=dsdssds HTTP/1.1" 200 12

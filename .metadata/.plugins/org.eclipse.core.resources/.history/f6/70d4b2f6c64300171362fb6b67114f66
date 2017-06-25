@@ -1,8 +1,0 @@
-package com.hommy.service;
-
-import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.LinkedBlockingQueue;
-
-public class PublicationQueue {
-	private BlockingQueue<Publication> queue = new LinkedBlockingQueue<>();
-}

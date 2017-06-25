@@ -9,13 +9,18 @@ import java.util.List;
 
 import com.hommy.administrator.dao.interfaces.IAction;
 import com.hommy.administrator.dao.objects.Action;
-import com.hommy.database.DatabaseConnection;
+import com.hommy.database.DatabaseManager;
 
 public class ActionsOperation implements IAction {
 
 	@Override
 	public List<Action> getActions(List<Integer> Actionsid) {
-		Connection connection = DatabaseConnection.createConnection();
+
+		if (Actionsid.size() == 0) {
+			return new ArrayList<Action>();
+		}
+
+		Connection connection = DatabaseManager.createConnection();
 		List<Action> actions = new ArrayList<Action>();
 
 		StringBuilder query = new StringBuilder("select * from actions where id IN (");
@@ -56,7 +61,7 @@ public class ActionsOperation implements IAction {
 
 	@Override
 	public boolean addAction(Action action) {
-		Connection connection = DatabaseConnection.createConnection();
+		Connection connection = DatabaseManager.createConnection();
 		int result = 0;
 
 		String insertSQL = "INSERT INTO actions (action) VALUES (?)";

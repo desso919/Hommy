@@ -11,17 +11,17 @@ import com.hommy.administrator.dao.interfaces.IDevice;
 import com.hommy.administrator.dao.objects.Action;
 import com.hommy.administrator.dao.objects.Device;
 import com.hommy.administrator.dao.objects.Devices;
-import com.hommy.database.DatabaseConnection;
+import com.hommy.database.DatabaseManager;
 
 public class DevicesOperation implements IDevice {
 
 	static {
-		DatabaseConnection.initialize();
+		DatabaseManager.initialize();
 	}
 
 	@Override
 	public Devices getAllDevice() {
-		Connection connection = DatabaseConnection.createConnection();
+		Connection connection = DatabaseManager.createConnection();
 		Devices devices = new Devices();
 
 		String query = "select * from devices";
@@ -37,8 +37,9 @@ public class DevicesOperation implements IDevice {
 				String communicationProtocol = resultSet.getString("communicationprotocol");
 
 				System.out.println("Device: " + id + "  " + deviceName + "   " + communicationProtocol);
+				Device device = getDevice(deviceName);
 
-				devices.addDevice(new Device(id, deviceName));
+				devices.addDevice(device);
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -49,7 +50,7 @@ public class DevicesOperation implements IDevice {
 
 	@Override
 	public Device getDevice(String name) {
-		Connection connection = DatabaseConnection.createConnection();
+		Connection connection = DatabaseManager.createConnection();
 
 		String query = "select * from devices where devicename=?";
 
@@ -84,7 +85,7 @@ public class DevicesOperation implements IDevice {
 
 	@Override
 	public boolean addDevice(Device device) {
-		Connection connection = DatabaseConnection.createConnection();
+		Connection connection = DatabaseManager.createConnection();
 		int result = 0;
 
 		String insertSQL = "INSERT INTO devices (devicename, communicationprotocol) VALUES (?, ?)";
@@ -107,7 +108,7 @@ public class DevicesOperation implements IDevice {
 
 	@Override
 	public boolean removeDevice(int id) {
-		Connection connection = DatabaseConnection.createConnection();
+		Connection connection = DatabaseManager.createConnection();
 		int result = 0;
 
 		String query = "delete from devices where id=?";

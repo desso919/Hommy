@@ -13,6 +13,11 @@ import com.hommy.administrator.dao.objects.User;
 public class TestClass {
 
 	public static void main(String[] args) {
+		// DevicesOperation op = new DevicesOperation();
+		// Devices dev = op.getAllDevice();
+		//
+		// System.out.println(dev);
+
 		Rule rule = new Rule();
 		rule.setName("When I am coming home");
 		rule.setUser(new User(1, "Deso", "desp", ""));
@@ -21,13 +26,10 @@ public class TestClass {
 		Devices devices = new Devices();
 		Device dev = new Device(2, "");
 		Action act = new Action(1, "");
-		Action act2 = new Action(5, "");
 		act.setExecutionOrder(1);
-		act2.setExecutionOrder(2);
 
 		List<Action> actions = new ArrayList<Action>();
 		actions.add(act);
-		actions.add(act2);
 
 		dev.setActions(actions);
 

@@ -5,7 +5,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class Publication {
 
-	private int id;
+	private int authToken;
 	private String topicName;
 	private String oldValue;
 	private String newValue;
@@ -15,7 +15,7 @@ public class Publication {
 	}
 
 	public Publication(int id, String topicName, String oldValue, String newValue, String message) {
-		this.id = id;
+		this.authToken = id;
 		this.topicName = topicName;
 		this.oldValue = oldValue;
 		this.newValue = newValue;
@@ -23,11 +23,11 @@ public class Publication {
 	}
 
 	public int getId() {
-		return id;
+		return authToken;
 	}
 
 	public void setId(int id) {
-		this.id = id;
+		this.authToken = id;
 	}
 
 	public String getTopicName() {
@@ -64,8 +64,8 @@ public class Publication {
 
 	@Override
 	public String toString() {
-		return "Publication [id=" + id + ", topic=" + topicName + ", oldValue=" + oldValue + ", newValue=" + newValue
-				+ ", message=" + message + "]";
+		return "Publication [id=" + authToken + ", topic=" + topicName + ", oldValue=" + oldValue + ", newValue="
+				+ newValue + ", message=" + message + "]";
 	}
 
 	public String toJSON() throws JsonProcessingException {

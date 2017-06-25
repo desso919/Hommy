@@ -16,7 +16,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.hommy.administrator.dao.impl.RulesOperation;
-import com.hommy.administrator.dao.objects.Rule;
+import com.hommy.administrator.dao.objects.RuleDao;
 import com.hommy.administrator.dao.objects.Rules;
 
 @Path("/rules")
@@ -41,8 +41,8 @@ public class RulesService {
 		boolean isAddedSuccessfully = false;
 
 		if (rule != null) {
-			Rule newRule = mapper.readValue(rule, Rule.class);
-			isAddedSuccessfully = new RulesOperation().addRule(newRule);
+			RuleDao newRule = mapper.readValue(rule, RuleDao.class);
+			isAddedSuccessfully = new RulesOperation().addRuleDao(newRule);
 		}
 
 		if (isAddedSuccessfully) {

@@ -21,7 +21,6 @@ public class PublicationQueue {
 	}
 
 	public static Publication pollPublication() {
-		// System.out.println("Get head publication");
 		return queue.poll();
 	}
 

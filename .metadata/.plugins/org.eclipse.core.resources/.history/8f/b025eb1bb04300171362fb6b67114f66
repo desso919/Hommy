@@ -1,7 +1,0 @@
-package com.hommy.service.subscribers;
-
-import com.hommy.service.interfaces.IDeviceSubscriber;
-
-public abstract class DevcieSubscriber implements IDeviceSubscriber {
-
-}
