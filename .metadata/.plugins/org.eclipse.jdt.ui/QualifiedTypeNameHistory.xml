@@ -1,21 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.hommy.administrator.service.OperationResult"/>
-<fullyQualifiedTypeName name="com.hommy.administrator.service.Result"/>
-<fullyQualifiedTypeName name="java.lang.StringBuilder"/>
-<fullyQualifiedTypeName name="com.hommy.administrator.dao.impl.ActionsOperation"/>
-<fullyQualifiedTypeName name="com.hommy.administrator.dao.impl.DevicesOperation"/>
-<fullyQualifiedTypeName name="com.hommy.administrator.dao.objects.Rules"/>
 <fullyQualifiedTypeName name="com.hommy.administrator.dao.impl.EventsOperation"/>
-<fullyQualifiedTypeName name="com.hommy.administrator.dao.objects.User"/>
-<fullyQualifiedTypeName name="com.hommy.administrator.dao.objects.Event"/>
-<fullyQualifiedTypeName name="com.hommy.administrator.dao.objects.Action"/>
-<fullyQualifiedTypeName name="com.hommy.administrator.dao.objects.Rule"/>
 <fullyQualifiedTypeName name="com.hommy.service.IObserver"/>
 <fullyQualifiedTypeName name="com.hommy.service.subscribers.AirConditioner"/>
 <fullyQualifiedTypeName name="com.hommy.service.subscribers.DevcieSubscriber"/>
 <fullyQualifiedTypeName name="com.hommy.service.subscribers.AlarmClock"/>
-<fullyQualifiedTypeName name="com.hommy.service.interfaces.ITopic"/>
 <fullyQualifiedTypeName name="com.hommy.service.TopicFactory"/>
 <fullyQualifiedTypeName name="com.hommy.service.topics.TimeTopic"/>
 <fullyQualifiedTypeName name="com.hommy.service.topics.TemperatureTopic"/>
@@ -37,11 +26,9 @@
 <fullyQualifiedTypeName name="java.lang.Thread"/>
 <fullyQualifiedTypeName name="java.lang.Thread.State"/>
 <fullyQualifiedTypeName name="java.net.InetAddress"/>
-<fullyQualifiedTypeName name="com.hommy.administrator.dao.objects.Devices"/>
 <fullyQualifiedTypeName name="com.hommy.administrator.dao.objects.Device"/>
 <fullyQualifiedTypeName name="com.hommy.service.AllDevicesInNetwork"/>
 <fullyQualifiedTypeName name="com.hommy.service.topics.NotificationTopic"/>
-<fullyQualifiedTypeName name="com.hommy.service.interfaces.IDeviceSubscriber"/>
 <fullyQualifiedTypeName name="com.hommy.service.RegisterDevice"/>
 <fullyQualifiedTypeName name="java.net.URL"/>
 <fullyQualifiedTypeName name="java.io.DataOutputStream"/>
@@ -50,7 +37,6 @@
 <fullyQualifiedTypeName name="org.apache.http.client.HttpClient"/>
 <fullyQualifiedTypeName name="org.apache.http.client.methods.HttpPost"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="org.apache.http.message.BasicNameValuePair"/>
 <fullyQualifiedTypeName name="org.apache.http.client.entity.UrlEncodedFormEntity"/>
 <fullyQualifiedTypeName name="org.apache.http.HttpResponse"/>
@@ -60,4 +46,18 @@
 <fullyQualifiedTypeName name="com.hommy.utils.MessageData"/>
 <fullyQualifiedTypeName name="org.apache.http.entity.StringEntity"/>
 <fullyQualifiedTypeName name="com.hommy.utils.HTTPUtil"/>
+<fullyQualifiedTypeName name="com.hommy.administrator.dao.objects.Rule"/>
+<fullyQualifiedTypeName name="com.hommy.administrator.dao.objects.User"/>
+<fullyQualifiedTypeName name="com.hommy.administrator.dao.objects.Event"/>
+<fullyQualifiedTypeName name="com.hommy.administrator.dao.objects.Action"/>
+<fullyQualifiedTypeName name="com.hommy.service.interfaces.ITopic"/>
+<fullyQualifiedTypeName name="com.hommy.administrator.dao.impl.DevicesOperation"/>
+<fullyQualifiedTypeName name="com.hommy.administrator.dao.interfaces.IDevice"/>
+<fullyQualifiedTypeName name="com.hommy.administrator.dao.objects.Devices"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.hommy.service.subscribers.Laptop"/>
+<fullyQualifiedTypeName name="com.hommy.service.subscribers.SmartPhone"/>
+<fullyQualifiedTypeName name="com.hommy.service.DeviceSubscriberFactory"/>
+<fullyQualifiedTypeName name="com.hommy.service.interfaces.IDeviceSubscriber"/>
+<fullyQualifiedTypeName name="com.hommy.administrator.dao.objects.DEVICE_TYPE"/>
 </qualifiedTypeNameHistroy>

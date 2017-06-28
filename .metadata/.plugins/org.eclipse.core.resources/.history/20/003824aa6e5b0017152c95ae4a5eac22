@@ -1,0 +1,16 @@
+package com.hommy.service.subscribers;
+
+public class Laptop extends DevcieSubscriber {
+
+	public Laptop(String deviceName) {
+		super("Location");
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void update() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

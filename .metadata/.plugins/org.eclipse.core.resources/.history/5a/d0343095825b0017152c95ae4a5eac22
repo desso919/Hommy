@@ -1,0 +1,21 @@
+package com.hommy.se bscriber{
+
+/**
+ * This method updates the subscriber, used by topics
+ */
+public void update();
+
+/**
+ * This method is used to subscribe to a specific topic to observe
+ * 
+ * @param topic
+ */
+public void setTopic(ITopic topic);
+
+public int getId()public void setId(int id);
+
+public void setDeviceName(String name);
+
+public void setDeviceType(DEVICE_TYPE deviceType);
+
+}

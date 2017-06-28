@@ -32,10 +32,12 @@ public class EventsOperation implements IEvent {
 				int id = resultSet.getInt("Id");
 				String eventName = resultSet.getString("eventname");
 				String description = resultSet.getString("description");
+				String triggeredBy = resultSet.getString("triggeredBy");
 
 				System.out.println("Event: " + id + "  " + eventName + "   " + description);
-
-				events.addEvent(new Event(id, eventName, description));
+				Event event = new Event(id, eventName, description);
+				event.setTriggeredBy(triggeredBy);
+				events.addEvent(event);
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();

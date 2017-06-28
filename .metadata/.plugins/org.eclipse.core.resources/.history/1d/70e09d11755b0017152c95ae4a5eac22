@@ -1,0 +1,18 @@
+package com.hommy.service;
+
+public class InitHommySystem {
+
+	private static TopicsPool topics;
+	
+	private void initTopics() {
+
+	}
+
+	private void initDevices() {
+
+	}
+
+	private void setTopicForDevices() {
+
+	}
+}

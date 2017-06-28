@@ -35,6 +35,7 @@ public class DevicesOperation implements IDevice {
 				int id = resultSet.getInt("Id");
 				String deviceName = resultSet.getString("deviceName");
 				String communicationProtocol = resultSet.getString("communicationprotocol");
+				String deviceType = resultSet.getString("deviceType");
 
 				System.out.println("Device: " + id + "  " + deviceName + "   " + communicationProtocol);
 				Device device = getDevice(deviceName);
@@ -65,13 +66,14 @@ public class DevicesOperation implements IDevice {
 				int id = resultSet.getInt("Id");
 				String deviceName = resultSet.getString("deviceName");
 				String communicationProtocol = resultSet.getString("communicationprotocol");
+				String deviceType = resultSet.getString("deviceType");
 				List<Integer> actionsId = getDeviceActions(connection, id);
 
 				List<Action> actions = new ActionsOperation().getActions(actionsId);
 
 				System.out.println("Event: " + id + "  " + deviceName + "   " + communicationProtocol);
 
-				return new Device(id, deviceName, actions);
+				return new Device(id, deviceName, actions, deviceType);
 			} else {
 				System.out.println("Device with name: " + name + " does not exist");
 			}

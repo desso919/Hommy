@@ -1,0 +1,25 @@
+package com.hommy.service.interfaces;
+
+import com.hommy.administrator.dao.objects.DEVICE_TYPE;
+
+public interface IDeviceSubscriber {
+
+	/**
+	 * This method updates the subscriber, used by topics
+	 */
+	public void update();
+
+	/**
+	 * This method is used to subscribe to a specific topic to observe
+	 * 
+	 * @param topic
+	 */
+	public void setTopic(ITopic topic);
+
+	public void setId(int id);
+
+	public void setDeviceName(String name);
+
+	public void setDeviceType(DEVICE_TYPE deviceType;
+
+}

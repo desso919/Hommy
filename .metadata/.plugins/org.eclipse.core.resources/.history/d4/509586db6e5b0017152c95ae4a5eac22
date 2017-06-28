@@ -1,0 +1,14 @@
+package com.hommy.service.subscribers;
+
+public class Laptop extends DevcieSubscriber {
+
+	public Laptop() {
+		super("Location");
+	}
+
+	@Override
+	public void update() {
+
+	}
+
+}

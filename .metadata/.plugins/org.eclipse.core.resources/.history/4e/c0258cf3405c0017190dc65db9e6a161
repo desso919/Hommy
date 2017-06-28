@@ -1,0 +1,113 @@
+package com.hommy.service;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+import com.hommy.administrator.dao.impl.DevicesOperation;
+import com.hommy.administrator.dao.impl.EventsOperation;
+import com.hommy.administrator.dao.impl.RulesOperation;
+import com.hommy.administrator.dao.objects.DEVICE_TYPE;
+import com.hommy.administrator.dao.objects.Device;
+import com.hommy.administrator.dao.objects.Devices;
+import com.hommy.administrator.dao.objects.Event;
+import com.hommy.administrator.dao.objects.Events;
+import com.hommy.administrator.dao.objects.RuleDao;
+import com.hommy.service.interfaces.IDeviceSubscriber;
+
+public class HommySystemOperations {
+
+	private static List<IDeviceSubscriber> devices = new ArrayList<IDeviceSubscriber>();
+	private static Events events;
+	private static List<RuleDao> allRules;
+
+	static {
+		initDevices();
+		LoadAllRules();
+		LoadAllEvents();
+		setTopicForDevices();
+	}
+
+	public static List<IDeviceSubscriber> getDevices() {
+		return devices;
+
+	}
+
+	public static void setDevices(List<IDeviceSubscriber> devices) {
+		HommySystemOperations.devices = devices;
+	}
+
+	public static Events getEvents() {
+		return events;
+	}
+
+	public static void setEvents(Events events) {
+		HommySystemOperations.events = events;
+	}
+
+	public static List<RuleDao> getAllRules() {
+		return allRules;
+	}
+
+	public static void setAllRules(List<RuleDao> allRules) {
+		HommySystemOperations.allRules = allRules;
+	}
+
+	private static void initDevices() {
+		Devices devicesDB = new DevicesOperation().getAllDevice();
+
+		for (Device device : devicesDB.getDevices()) {
+			IDeviceSubscriber dev = DeviceSubscriberFactory.createDevice(device);
+			devices.add(dev);
+		}
+	}
+
+	private static void LoadAllRules() {
+		allRules = new RulesOperation().getAllRulesDao();
+	}
+
+	private static void LoadAllEvents() {
+		events = new EventsOperation().getAllEvents();
+	}
+
+	public static List<RuleDao> getRulesForDevices(int deviceId, String trigger) {
+		List<Integer> eventsId = getEventsByTrigger(trigger);
+
+		List<RuleDao> rules = new ArrayList<RuleDao>();
+
+		for (Iterator<RuleDao> iterator = allRules.iterator(); iterator.hasNext();) {
+			RuleDao tempRule = iterator.next();
+			int tempEventId = tempRule.getEventId();
+			int tempDeviceId = tempRule.getDeviceId();
+
+			if (tempDeviceId == deviceId && eventsId.con) {
+				rules.add(tempRule);
+			}
+		}
+		return rules;
+	}
+
+	private static List<Event> getEventsByTrigger(String trigger) {
+		List<Event> eventsId = new ArrayList<Event>();
+
+		for (Event event : events.getEvents()) {
+
+			if (event.getTriggeredBy().equalsIgnoreCase(trigger)) {
+				eventsId.add(event.getId());
+			}
+		}
+		return eventsId;
+	}
+
+	private static void setTopicForDevices() {
+
+		for (IDeviceSubscriber deviceSubscriber : devices) {
+			if (deviceSubscriber.getDeviceType().equals(DEVICE_TYPE.LAPTOP)) {
+				RegisterDevice.register(deviceSubscriber, TopicsPool.getTopic(Topics.LOCATION));
+			}
+			if (deviceSubscriber.getDeviceType().equals(DEVICE_TYPE.SMARTPHONE)) {
+				RegisterDevice.register(deviceSubscriber, TopicsPool.getTopic(Topics.LOCATION));
+			}
+		}
+	}
+}

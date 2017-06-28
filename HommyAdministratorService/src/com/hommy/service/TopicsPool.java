@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.hommy.service.interfaces.ITopic;
+import com.hommy.service.topics.LocationTopic;
 import com.hommy.service.topics.NotificationTopic;
 import com.hommy.service.topics.TemperatureTopic;
 import com.hommy.service.topics.TimeTopic;
@@ -16,9 +17,10 @@ public final class TopicsPool {
 		topics.add(TimeTopic.getInstance());
 		topics.add(TemperatureTopic.getInstance());
 		topics.add(NotificationTopic.getInstance());
+		topics.add(LocationTopic.getInstance());
 	}
 
-	public List<ITopic> getTopics() {
+	public static List<ITopic> getTopics() {
 		return topics;
 	}
 
@@ -29,16 +31,35 @@ public final class TopicsPool {
 		return false;
 	}
 
-	public static synchronized ITopic getTopic(String topicName) {
+	public static synchronized ITopic getTopic(Topics topicName) {
 
 		ITopic topic = null;
 
-		if (topicName.equalsIgnoreCase("Time")) {
+		if (topicName == Topics.TIME) {
 			topic = TimeTopic.getInstance();
-		} else if (topicName.equalsIgnoreCase("Temperature")) {
+		} else if (topicName == Topics.TEMPERATURE) {
 			topic = TemperatureTopic.getInstance();
-		} else if (topicName.equalsIgnoreCase("Notification")) {
+		} else if (topicName == Topics.NOTIFICATION) {
+			topic = NotificationTopic.getInstance();
+		} else if (topicName == Topics.LOCATION) {
+			topic = LocationTopic.getInstance();
+		}
+
+		return topic;
+	}
+
+	public static synchronized ITopic getTopicString(String topicName) {
+
+		ITopic topic = null;
+
+		if (topicName.equalsIgnoreCase(Topics.TIME.toString())) {
+			topic = TimeTopic.getInstance();
+		} else if (topicName.equalsIgnoreCase(Topics.TEMPERATURE.toString())) {
 			topic = TemperatureTopic.getInstance();
+		} else if (topicName.equalsIgnoreCase(Topics.NOTIFICATION.toString())) {
+			topic = NotificationTopic.getInstance();
+		} else if (topicName.equalsIgnoreCase(Topics.LOCATION.toString())) {
+			topic = LocationTopic.getInstance();
 		}
 
 		return topic;

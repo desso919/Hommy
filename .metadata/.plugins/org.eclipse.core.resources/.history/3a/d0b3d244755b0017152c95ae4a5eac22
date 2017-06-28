@@ -1,0 +1,21 @@
+package com.hommy.service;
+
+import com.hommy.administrator.dao.objects.Devices;
+
+public class InitHommySystem {
+
+	private static TopicsPool topics;
+	private static Devices devices;
+
+	private void initTopics() {
+
+	}
+
+	private void initDevices() {
+
+	}
+
+	private void setTopicForDevices() {
+
+	}
+}

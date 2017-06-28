@@ -1,0 +1,38 @@
+package com.hommy.service.topics;
+
+import com.hommy.service.interfaces.IDeviceSubscriber;
+import com.hommy.service.interfaces.ITopic;
+
+public class LocationTopic implements ITopic {
+
+	@Override
+	public boolean register(IDeviceSubscriber device) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean unregister(IDeviceSubscriber device) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public void notifySubscribers() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public Object getUpdate(IDeviceSubscriber device) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void publishMessage(Object message) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

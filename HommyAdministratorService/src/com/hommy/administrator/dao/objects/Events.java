@@ -39,7 +39,30 @@ public class Events {
 
 	public Event getEvent(String name) {
 		for (Event event : events) {
-			if (event.getName().equals(name)) {
+			if (event.getName().equalsIgnoreCase(name)) {
+				return event;
+			}
+		}
+
+		return null;
+	}
+
+	public Events getEventsByTrigger(String triggeredBy) {
+		Events eventsTrigered = new Events();
+
+		for (Event event : events) {
+			if (event.getTriggeredBy() != null) {
+				if (event.getTriggeredBy().equalsIgnoreCase(triggeredBy)) {
+					eventsTrigered.addEvent(event);
+				}
+			}
+		}
+		return eventsTrigered;
+	}
+
+	public Event getEventById(int eventId) {
+		for (Event event : events) {
+			if (event.getId() == eventId) {
 				return event;
 			}
 		}
@@ -50,6 +73,16 @@ public class Events {
 	public boolean containsEventWithName(String name) {
 		for (Event event : events) {
 			if (event.getName().equals(name)) {
+				return true;
+			}
+		}
+
+		return false;
+	}
+
+	public boolean containsEventWithId(int eventId) {
+		for (Event event : events) {
+			if (event.getId() == eventId) {
 				return true;
 			}
 		}

@@ -12,6 +12,7 @@ public class Device {
 	private String macAddress;
 	private Protocol protocol;
 	private List<Action> actions;
+	private String deviceType;
 
 	public Device(int id) {
 		this.id = id;
@@ -47,10 +48,11 @@ public class Device {
 		this.macAddress = macAddress;
 	}
 
-	public Device(int id, String deviceName, List<Action> actions) {
+	public Device(int id, String deviceName, List<Action> actions, String deviceType) {
 		this.id = id;
 		this.name = deviceName;
 		this.actions = actions;
+		this.deviceType = deviceType;
 	}
 
 	public int getId() {
@@ -91,6 +93,14 @@ public class Device {
 
 	public void setActions(List<Action> actions) {
 		this.actions = actions;
+	}
+
+	public String getDeviceType() {
+		return deviceType;
+	}
+
+	public void setDeviceType(String deviceType) {
+		this.deviceType = deviceType;
 	}
 
 	@Override

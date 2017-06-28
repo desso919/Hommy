@@ -24,8 +24,7 @@ public class RulesOperation implements IRule {
 		DatabaseManager.initialize();
 	}
 
-	@Override
-	public Rules getAllRules() {
+	public Rules getAllRulesByEvent() {
 		Connection connection = DatabaseManager.createConnection();
 		List<Rule> rules = new ArrayList<Rule>();
 		Rules rulesManage = new Rules();
@@ -56,6 +55,77 @@ public class RulesOperation implements IRule {
 		return rulesManage;
 	}
 
+	@Override
+	public Rules getAllRules() {
+		Connection connection = DatabaseManager.createConnection();
+		List<Rule> rules = new ArrayList<Rule>();
+		Rules rulesManage = new Rules();
+
+		String query = "select * from rules";
+
+		Statement statement;
+		try {
+			statement = connection.createStatement();
+			ResultSet resultSet = statement.executeQuery(query);
+			System.out.println("All rules: ");
+
+			while (resultSet.next()) {
+				int id = resultSet.getInt("id");
+				String name = resultSet.getString("rulename");
+				int eventId = resultSet.getInt("eventId");
+
+				int deviceId = resultSet.getInt("deviceId");
+				int actionId = resultSet.getInt("actionId");
+				int executionOrder = resultSet.getInt("executionOrder");
+
+				System.out.println("Rule: " + id + "  " + name);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+		rulesManage.setRules(rules);
+		return rulesManage;
+	}
+
+	public List<RuleDao> getAllRulesDao() {
+		Connection connection = DatabaseManager.createConnection();
+		List<RuleDao> rules = new ArrayList<RuleDao>();
+
+		String query = "select * from rules";
+
+		Statement statement;
+		try {
+			statement = connection.createStatement();
+			ResultSet resultSet = statement.executeQuery(query);
+			System.out.println("All rules: ");
+
+			while (resultSet.next()) {
+				int id = resultSet.getInt("id");
+				String name = resultSet.getString("rulename");
+				int eventId = resultSet.getInt("eventId");
+
+				int deviceId = resultSet.getInt("deviceId");
+				int actionId = resultSet.getInt("actionId");
+				int executionOrder = resultSet.getInt("executionOrder");
+
+				RuleDao rule = new RuleDao();
+				rule.setRuleName(name);
+				rule.setDeviceId(deviceId);
+				rule.setEventId(eventId);
+				rule.setActionId(actionId);
+				rule.setExecutionOrder(executionOrder);
+
+				rules.add(rule);
+				System.out.println("Rule: " + id + "  " + name);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+		return rules;
+	}
+
 	public void getRuleForUserAndDevice(int userId, int DeviceId) {
 		Connection connection = DatabaseManager.createConnection();
 		Rules rulesManage = new Rules();
@@ -82,6 +152,8 @@ public class RulesOperation implements IRule {
 		}
 
 	}
+
+	// select * from rules where userId = 1 and deviceId=21 and eventId = 1
 
 	public Rule getRuleByName(String name) {
 		Connection connection = DatabaseManager.createConnection();

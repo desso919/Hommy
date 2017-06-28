@@ -1,0 +1,63 @@
+package com.hommy.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.hommy.administrator.dao.impl.DevicesOperation;
+import com.hommy.administrator.dao.impl.RulesOperation;
+import com.hommy.administrator.dao.objects.DEVICE_TYPE;
+import com.hommy.administrator.dao.objects.Device;
+import com.hommy.administrator.dao.objects.Devices;
+import com.hommy.administrator.dao.objects.Rule;
+import com.hommy.administrator.dao.objects.Rules;
+import com.hommy.service.interfaces.IDeviceSubscriber;
+
+public class InitHommySystem {
+
+	private static List<IDeviceSubscriber> devices = new ArrayList<IDeviceSubscriber>();
+
+	private static Rules allRules;
+
+	static {
+		initDevices();
+		setTopicForDevices();
+	}
+
+	public static List<IDeviceSubscriber> getDevices() {
+		return devices;
+	}
+
+	public static void setDevices(List<IDeviceSubscriber> devices) {
+		InitHommySystem.devices = devices;
+	}
+
+	private static void initDevices() {
+		Devices devicesDB = new DevicesOperation().getAllDevice();
+
+		for (Device device : devicesDB.getDevices()) {
+			IDeviceSubscriber dev = DeviceSubscriberFactory.createDevice(device);
+			devices.add(dev);
+		}
+	}
+
+	private static void LoadAllRules() {
+		allRules = new RulesOperation().getAllRules();
+	}
+
+	public static Rule getRulesForDevices(int deviceId) {
+		return null;
+
+	}
+
+	private static void setTopicForDevices() {
+
+		for (IDeviceSubscriber deviceSubscriber : devices) {
+			if (deviceSubscriber.getDeviceType().equals(DEVICE_TYPE.LAPTOP)) {
+				RegisterDevice.register(deviceSubscriber, TopicsPool.getTopic(Topics.LOCATION));
+			}
+			if (deviceSubscriber.getDeviceType().equals(DEVICE_TYPE.SMARTPHONE)) {
+				RegisterDevice.register(deviceSubscriber, TopicsPool.getTopic(Topics.LOCATION));
+			}
+		}
+	}
+}

@@ -1,6 +1,6 @@
 package com.hommy.service.subscribers;
 
-public class AlarmClock extends DevcieSubscriber {
+public class AlarmClock extends DeviceSubscriber {
 
 	public AlarmClock(String deviceName) {
 		super(deviceName);

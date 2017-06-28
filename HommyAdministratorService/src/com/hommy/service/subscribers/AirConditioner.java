@@ -1,6 +1,6 @@
 package com.hommy.service.subscribers;
 
-public class AirConditioner extends DevcieSubscriber {
+public class AirConditioner extends DeviceSubscriber {
 
 	public AirConditioner(String deviceName) {
 		super(deviceName);

@@ -48,9 +48,29 @@ public class Devices {
 		return null;
 	}
 
+	public Device getDeviceById(int deviceId) {
+		for (Device device : devices) {
+			if (device.getId() == deviceId) {
+				return device;
+			}
+		}
+
+		return null;
+	}
+
 	public boolean containsDeviceWithName(String name) {
 		for (Device device : devices) {
 			if (device.getName().equals(name)) {
+				return true;
+			}
+		}
+
+		return false;
+	}
+
+	public boolean containsDeviceId(int id) {
+		for (Device device : devices) {
+			if (device.getId() == id) {
 				return true;
 			}
 		}

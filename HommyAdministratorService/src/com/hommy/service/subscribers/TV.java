@@ -1,9 +1,9 @@
 package com.hommy.service.subscribers;
 
-public class TV extends DevcieSubscriber {
+public class TV extends DeviceSubscriber {
 
-	public TV(String deviceName) {
-		super(deviceName);
+	public TV() {
+		super("TV");
 	}
 
 	@Override

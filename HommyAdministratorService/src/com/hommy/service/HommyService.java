@@ -16,13 +16,12 @@ import com.hommy.administrator.dao.impl.DevicesOperation;
 import com.hommy.administrator.dao.objects.Device;
 import com.hommy.administrator.service.OperationResult;
 import com.hommy.administrator.service.Result;
-import com.hommy.service.subscribers.SmartPhone;
 
 @Path("/service")
 public class HommyService {
 
 	static {
-		new RegisterDevice().register(new SmartPhone(), TopicsPool.getTopic("Notification"));
+		new HommySystemOperations();
 	}
 
 	@Path("/register")

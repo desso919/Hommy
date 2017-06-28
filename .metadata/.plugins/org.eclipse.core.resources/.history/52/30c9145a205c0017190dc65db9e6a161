@@ -1,0 +1,44 @@
+package com.hommy.service;
+
+import java.util.List;
+
+import com.hommy.administrator.dao.impl.DevicesOperation;
+import com.hommy.administrator.dao.objects.DEVICE_TYPE;
+import com.hommy.administrator.dao.objects.Device;
+import com.hommy.administrator.dao.objects.Devices;
+import com.hommy.service.interfaces.IDeviceSubscriber;
+import com.hommy.service.interfaces.ITopic;
+
+public class InitHommySystem {
+
+	private static List<ITopic> topics;
+	private static List<IDeviceSubscriber> devices;
+
+	static {
+		initTopics();
+		initDevices();
+		setTopicForDevices();
+	}
+
+	private static void initTopics() {
+		topics = TopicsPool.getTopics();
+	}
+
+	private static void initDevices() {
+		Devices devicesDB = new DevicesOperation().getAllDevice();
+
+		for (Device device : devicesDB.getDevices()) {
+			devices.add(DeviceSubscriberFactory.createDevice(device));
+		}
+	}
+
+	private static void setTopicForDevices() {
+
+		for (IDeviceSubscriber deviceSubscriber : devices) {
+
+			if (deviceSubscriber.equals(DEVICE_TYPE.LAPTOP)) {
+				deviceSubscriber.setTopic(TopicsPool.getTopic(Topics.LOCATION));
+			}
+		}
+	}
+}

@@ -1,5 +1,7 @@
 package com.hommy.service.interfaces;
 
+import com.hommy.administrator.dao.objects.DEVICE_TYPE;
+
 public interface IDeviceSubscriber {
 
 	/**
@@ -13,4 +15,17 @@ public interface IDeviceSubscriber {
 	 * @param topic
 	 */
 	public void setTopic(ITopic topic);
+
+	public int getId();
+
+	public void setId(int id);
+
+	public String getDeviceName();
+
+	public void setDeviceName(String name);
+
+	public DEVICE_TYPE getDeviceType();
+
+	public void setDeviceType(DEVICE_TYPE deviceType);
+
 }

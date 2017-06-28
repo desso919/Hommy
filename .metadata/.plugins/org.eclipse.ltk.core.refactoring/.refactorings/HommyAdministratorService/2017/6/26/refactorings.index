@@ -1,0 +1,8 @@
+1498595993960	Move compilation unit
+1498599377461	Rename method 'getDevice'
+1498599568749	Rename type 'DevcieSubscriber'
+1498600023066	Rename local variable 'device'
+1498679321874	Rename type 'InitHommySystem'
+1498679331899	Delete element
+1498681809755	Extract method 'getEventsByTrigger'
+1498685336212	Extract method 'getDeviceAction'
