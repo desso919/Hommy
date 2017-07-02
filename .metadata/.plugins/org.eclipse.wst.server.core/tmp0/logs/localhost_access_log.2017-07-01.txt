@@ -1,0 +1,15 @@
+127.0.0.1 - - [01/Jul/2017:13:40:53 +0300] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [01/Jul/2017:13:40:56 +0300] "GET /HommyAdministratorService/ HTTP/1.1" 404 1046
+192.168.0.101 - - [01/Jul/2017:14:32:25 +0300] "POST /HommyAdministratorService/hommy/service/publish HTTP/1.1" 500 5796
+127.0.0.1 - - [01/Jul/2017:14:53:08 +0300] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [01/Jul/2017:14:53:10 +0300] "GET /HommyAdministratorService/ HTTP/1.1" 404 1046
+192.168.0.101 - - [01/Jul/2017:14:53:31 +0300] "POST /HommyAdministratorService/hommy/service/publish HTTP/1.1" 200 73
+192.168.0.101 - - [01/Jul/2017:14:55:17 +0300] "POST /HommyAdministratorService/hommy/service/publish HTTP/1.1" 200 73
+192.168.0.101 - - [01/Jul/2017:14:55:52 +0300] "POST /HommyAdministratorService/hommy/service/publish HTTP/1.1" 200 73
+192.168.0.101 - - [01/Jul/2017:14:57:09 +0300] "POST /HommyAdministratorService/hommy/service/publish HTTP/1.1" 200 73
+192.168.0.101 - - [01/Jul/2017:14:58:09 +0300] "POST /HommyAdministratorService/hommy/service/publish HTTP/1.1" 200 73
+192.168.0.101 - - [01/Jul/2017:15:09:09 +0300] "POST /HommyAdministratorService/hommy/service/publish HTTP/1.1" 200 73
+192.168.0.101 - - [01/Jul/2017:15:42:20 +0300] "POST /HommyAdministratorService/hommy/service/publish HTTP/1.1" 200 73
+192.168.0.101 - - [01/Jul/2017:17:48:56 +0300] "POST /HommyAdministratorService/hommy/service/publish HTTP/1.1" 200 73
+192.168.0.101 - - [01/Jul/2017:18:25:23 +0300] "POST /HommyAdministratorService/hommy/service/publish HTTP/1.1" 200 73
+192.168.0.101 - - [01/Jul/2017:18:49:09 +0300] "POST /HommyAdministratorService/hommy/service/publish HTTP/1.1" 200 73

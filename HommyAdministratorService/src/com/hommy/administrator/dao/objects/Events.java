@@ -76,7 +76,6 @@ public class Events {
 				return true;
 			}
 		}
-
 		return false;
 	}
 
@@ -86,7 +85,6 @@ public class Events {
 				return true;
 			}
 		}
-
 		return false;
 	}
 

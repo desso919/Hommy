@@ -47,9 +47,6 @@ public class ActionsOperation implements IAction {
 			while (resultSet.next()) {
 				int id = resultSet.getInt("id");
 				String action = resultSet.getString("action");
-
-				System.out.println("Action: " + id + "  " + action);
-
 				actions.add(new Action(id, action));
 			}
 		} catch (SQLException e) {

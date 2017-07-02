@@ -6,3 +6,5 @@
 1498679331899	Delete element
 1498681809755	Extract method 'getEventsByTrigger'
 1498685336212	Extract method 'getDeviceAction'
+1498765277181	Extract method 'initServerSocket'
+1498765842819	Delete element

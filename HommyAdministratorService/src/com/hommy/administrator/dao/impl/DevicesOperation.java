@@ -15,10 +15,6 @@ import com.hommy.database.DatabaseManager;
 
 public class DevicesOperation implements IDevice {
 
-	static {
-		DatabaseManager.initialize();
-	}
-
 	@Override
 	public Devices getAllDevice() {
 		Connection connection = DatabaseManager.createConnection();
@@ -37,9 +33,7 @@ public class DevicesOperation implements IDevice {
 				String communicationProtocol = resultSet.getString("communicationprotocol");
 				String deviceType = resultSet.getString("deviceType");
 
-				System.out.println("Device: " + id + "  " + deviceName + "   " + communicationProtocol);
 				Device device = getDevice(deviceName);
-
 				devices.addDevice(device);
 			}
 		} catch (SQLException e) {
@@ -70,9 +64,6 @@ public class DevicesOperation implements IDevice {
 				List<Integer> actionsId = getDeviceActions(connection, id);
 
 				List<Action> actions = new ActionsOperation().getActions(actionsId);
-
-				System.out.println("Event: " + id + "  " + deviceName + "   " + communicationProtocol);
-
 				return new Device(id, deviceName, actions, deviceType);
 			} else {
 				System.out.println("Device with name: " + name + " does not exist");

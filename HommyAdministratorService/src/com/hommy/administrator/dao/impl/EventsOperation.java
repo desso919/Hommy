@@ -12,10 +12,6 @@ import com.hommy.database.DatabaseManager;
 
 public class EventsOperation implements IEvent {
 
-	static {
-		DatabaseManager.initialize();
-	}
-
 	@Override
 	public Events getAllEvents() {
 		Connection connection = DatabaseManager.createConnection();
@@ -34,7 +30,6 @@ public class EventsOperation implements IEvent {
 				String description = resultSet.getString("description");
 				String triggeredBy = resultSet.getString("triggeredBy");
 
-				System.out.println("Event: " + id + "  " + eventName + "   " + description);
 				Event event = new Event(id, eventName, description);
 				event.setTriggeredBy(triggeredBy);
 				events.addEvent(event);
@@ -59,8 +54,6 @@ public class EventsOperation implements IEvent {
 			if (resultSet.next()) {
 				String eventName = resultSet.getString("eventname");
 				String description = resultSet.getString("description");
-
-				System.out.println("Event: " + id + "  " + eventName + "   " + description);
 
 				return new Event(id, eventName, description);
 			} else {
@@ -91,8 +84,6 @@ public class EventsOperation implements IEvent {
 				int id = resultSet.getInt("Id");
 				String eventName = resultSet.getString("eventname");
 				String description = resultSet.getString("description");
-
-				System.out.println("Event: " + id + "  " + eventName + "   " + description);
 
 				return new Event(id, eventName, description);
 			} else {

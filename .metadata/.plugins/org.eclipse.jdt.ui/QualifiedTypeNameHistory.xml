@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.hommy.administrator.dao.impl.EventsOperation"/>
-<fullyQualifiedTypeName name="com.hommy.service.IObserver"/>
-<fullyQualifiedTypeName name="com.hommy.service.subscribers.AirConditioner"/>
-<fullyQualifiedTypeName name="com.hommy.service.subscribers.DevcieSubscriber"/>
 <fullyQualifiedTypeName name="com.hommy.service.subscribers.AlarmClock"/>
 <fullyQualifiedTypeName name="com.hommy.service.TopicFactory"/>
 <fullyQualifiedTypeName name="com.hommy.service.topics.TimeTopic"/>
@@ -46,10 +42,7 @@
 <fullyQualifiedTypeName name="com.hommy.utils.MessageData"/>
 <fullyQualifiedTypeName name="org.apache.http.entity.StringEntity"/>
 <fullyQualifiedTypeName name="com.hommy.utils.HTTPUtil"/>
-<fullyQualifiedTypeName name="com.hommy.administrator.dao.objects.Rule"/>
 <fullyQualifiedTypeName name="com.hommy.administrator.dao.objects.User"/>
-<fullyQualifiedTypeName name="com.hommy.administrator.dao.objects.Event"/>
-<fullyQualifiedTypeName name="com.hommy.administrator.dao.objects.Action"/>
 <fullyQualifiedTypeName name="com.hommy.service.interfaces.ITopic"/>
 <fullyQualifiedTypeName name="com.hommy.administrator.dao.impl.DevicesOperation"/>
 <fullyQualifiedTypeName name="com.hommy.administrator.dao.interfaces.IDevice"/>
@@ -60,4 +53,11 @@
 <fullyQualifiedTypeName name="com.hommy.service.DeviceSubscriberFactory"/>
 <fullyQualifiedTypeName name="com.hommy.service.interfaces.IDeviceSubscriber"/>
 <fullyQualifiedTypeName name="com.hommy.administrator.dao.objects.DEVICE_TYPE"/>
+<fullyQualifiedTypeName name="com.hommy.administrator.dao.objects.Event"/>
+<fullyQualifiedTypeName name="com.hommy.administrator.dao.objects.Action"/>
+<fullyQualifiedTypeName name="com.hommy.administrator.dao.impl.ActionsOperation"/>
+<fullyQualifiedTypeName name="com.hommy.administrator.dao.objects.Rule"/>
+<fullyQualifiedTypeName name="com.hommy.administrator.dao.objects.Rules"/>
+<fullyQualifiedTypeName name="javax.ws.rs.core.Response.Status"/>
+<fullyQualifiedTypeName name="com.sun.jersey.api.client.ClientResponse.Status"/>
 </qualifiedTypeNameHistroy>

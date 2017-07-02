@@ -11,10 +11,6 @@ import com.hommy.database.DatabaseManager;
 
 public class UsersOperation implements IUser {
 
-	static {
-		DatabaseManager.initialize();
-	}
-
 	@Override
 	public User getUser(String username, String password) {
 		Connection connection = DatabaseManager.createConnection();
@@ -32,8 +28,6 @@ public class UsersOperation implements IUser {
 			if (resultSet.next()) {
 				int id = resultSet.getInt("id");
 				String email = resultSet.getString("email");
-				System.out.println("User: " + resultSet.getString("username") + "  " + resultSet.getString("password")
-						+ "   " + email);
 
 				return new User(id, username, password, email);
 			} else {

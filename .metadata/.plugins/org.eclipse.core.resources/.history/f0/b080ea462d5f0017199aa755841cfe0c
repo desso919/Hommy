@@ -1,0 +1,30 @@
+package com.hommy.service.subscribers;
+
+import com.hommy.service.TopicsPool;
+import com.hommy.utils.HTTPUtil;
+import com.hommy.utils.HommyUtil;
+import com.hommy.utils.Message;
+
+public class SmartPhone extends DeviceSubscriber {
+
+	public SmartPhone() {
+		super("SmartPhone");
+	}
+
+	@Override
+	public void update() {
+		String message = (String) super.getTopic().getUpdate(this);
+		if (message == null) {
+			System.out.println(super.getDeviceName() + ":: No new message");
+		} else {
+			System.out.println(super.getDeviceName() + ":: Consuming message from Smartphone::" + message);
+			if(message.equalsIgnoreCase(TopicsPool.getTopicString(message).toString())) {
+				Message massageToSend = new Message(HommyUtil.DEVICE_TOKEN);
+				massageToSend.add("message", message);
+				boolean isSend = HTTPUtil.sendMessage(massageToSend);
+				System.out.println("IS SEND? " + isSend);
+			}
+			
+		}
+	}
+}

@@ -1,0 +1,68 @@
+package com.hommy.service.subscribers;
+
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+public class Laptop extends DeviceSubscriber {
+
+	private static ServerSocket serverSocket;
+	private static Socket server;
+
+	public static void main(String[] args) {
+
+	}
+
+	static {
+		initServerSocket();
+	}
+
+	public Laptop() {
+		super("Laptop");
+	}
+
+	@Override
+	public void update() {
+		String message = (String) super.getTopic().getUpdate(this);
+		if (message == null) {
+			System.out.println(super.getDeviceName() + ":: No new message");
+		} else {
+			System.out.println(super.getDeviceName() + ":: Consuming message from Laptop::" + message);
+
+			// Message massageToSend = new Message(HommyUtil.DEVICE_TOKEN);
+			// massageToSend.add("message", message);
+			// boolean isSend = HTTPUtil.sendMessage(massageToSend);
+			// System.out.println("IS SEND? " + isSend);
+		}
+	}
+
+	private static void initServerSocket() {
+		try {
+			serverSocket = new ServerSocket(6066);
+			serverSocket.setSoTimeout(0);
+
+			System.out.println("Waiting for client on port " + serverSocket.getLocalPort() + "...");
+			server = serverSocket.accept();
+
+			System.out.println("Just connected to " + server.getRemoteSocketAddress());
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	private static void sendMessage(String message) {
+		DataOutputStream out;
+		try {
+			out = new DataOutputStream(server.getOutputStream());
+			if(message != null) {
+				out.writeUTF(message);
+				out.flush();
+			}
+	
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+	}
+}

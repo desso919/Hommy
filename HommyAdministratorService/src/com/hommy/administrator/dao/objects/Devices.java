@@ -40,28 +40,32 @@ public class Devices {
 
 	public Device getDevice(String name) {
 		for (Device device : devices) {
-			if (device.getName().equals(name)) {
-				return device;
+			if (device.getName() != null) {
+				if (device.getName().equals(name)) {
+					return device;
+				}
 			}
 		}
-
 		return null;
 	}
 
 	public Device getDeviceById(int deviceId) {
 		for (Device device : devices) {
-			if (device.getId() == deviceId) {
-				return device;
+			if (device.getId() > 0) {
+				if (device.getId() == deviceId) {
+					return device;
+				}
 			}
 		}
-
 		return null;
 	}
 
 	public boolean containsDeviceWithName(String name) {
 		for (Device device : devices) {
-			if (device.getName().equals(name)) {
-				return true;
+			if (device.getName() != null) {
+				if (device.getName().equals(name)) {
+					return true;
+				}
 			}
 		}
 

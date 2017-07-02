@@ -17,12 +17,9 @@ import com.hommy.administrator.dao.objects.Rule;
 import com.hommy.administrator.dao.objects.RuleDao;
 import com.hommy.administrator.dao.objects.Rules;
 import com.hommy.database.DatabaseManager;
+import com.hommy.service.HommySystemOperations;
 
 public class RulesOperation implements IRule {
-
-	static {
-		DatabaseManager.initialize();
-	}
 
 	public Rules getAllRulesByEvent() {
 		Connection connection = DatabaseManager.createConnection();
@@ -44,8 +41,6 @@ public class RulesOperation implements IRule {
 				int deviceId = resultSet.getInt("deviceId");
 				int actionId = resultSet.getInt("actionId");
 				int executionOrder = resultSet.getInt("executionOrder");
-
-				System.out.println("Rule: " + id + "  " + name);
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -77,8 +72,6 @@ public class RulesOperation implements IRule {
 				int deviceId = resultSet.getInt("deviceId");
 				int actionId = resultSet.getInt("actionId");
 				int executionOrder = resultSet.getInt("executionOrder");
-
-				System.out.println("Rule: " + id + "  " + name);
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -117,7 +110,6 @@ public class RulesOperation implements IRule {
 				rule.setExecutionOrder(executionOrder);
 
 				rules.add(rule);
-				System.out.println("Rule: " + id + "  " + name);
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -144,8 +136,6 @@ public class RulesOperation implements IRule {
 				int deviceId = resultSet.getInt("deviceId");
 				int actionId = resultSet.getInt("actionId");
 				int executionOrder = resultSet.getInt("executionOrder");
-
-				System.out.println("Rule: " + id + "  " + name + "   " + deviceId + "  " + actionId);
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -213,9 +203,6 @@ public class RulesOperation implements IRule {
 
 			while (resultSet.next()) {
 				String name = resultSet.getString("rulename");
-
-				System.out.println("Rule:  " + name);
-
 				rulesManage.addRule(new Rule(name));
 			}
 		} catch (SQLException e) {
@@ -274,6 +261,7 @@ public class RulesOperation implements IRule {
 			preparedStatement.setInt(6, 1);
 
 			result = preparedStatement.executeUpdate();
+			HommySystemOperations.update();
 
 		} catch (SQLException e) {
 			e.printStackTrace();

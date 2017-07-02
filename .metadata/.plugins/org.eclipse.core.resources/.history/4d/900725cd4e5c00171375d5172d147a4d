@@ -1,0 +1,48 @@
+package clientTest;
+
+import java.io.IOException;
+import java.util.Scanner;
+
+import javax.ws.rs.core.MediaType;
+
+import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonMappingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.sun.jersey.api.client.Client;
+import com.sun.jersey.api.client.WebResource;
+
+public class ClientHommy {
+
+	public static void main(String[] args) throws JsonParseException, JsonMappingException, IOException {
+
+	}
+
+	private static String waitForCommants() throws JsonParseException, JsonMappingException, IOException {
+		ObjectMapper mapper = new ObjectMapper();
+		Client client = Client.create();
+
+		WebResource resource = client.resource("http://localhost:8080/SurveyRESTfulService/survey/surveys");
+		String responce = resource.accept(MediaType.APPLICATION_JSON).get(String.class);
+
+		return mapper.readValue(responce, String.class);
+	}
+
+	private static void submitSurvey(String survey) throws JsonProcessingException {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Would you like to submit the survey (yes/no)?");
+		String submit = input.nextLine();
+		if (submit.equalsIgnoreCase("yes") || submit.equalsIgnoreCase("y")) {
+			Client client = Client.create();
+			ObjectMapper mapper = new ObjectMapper();
+
+			String json = mapper.writeValueAsString(survey);
+			WebResource resource = client.resource("http://localhost:8080/SurveyRESTfulService/survey/surveys");
+
+			resource.path("/submit").type(MediaType.APPLICATION_JSON).post(json);
+			System.out.println("The survey was successfully submited!");
+		} else {
+			System.out.println("The survey is not yet submited!");
+		}
+	}
+}

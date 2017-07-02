@@ -32,6 +32,11 @@ public class HommySystemOperations {
 		setTopicForDevices();
 	}
 
+	public static void update() {
+		LoadAllRules();
+		LoadAllEvents();
+	}
+
 	public static List<IDeviceSubscriber> getDevices() {
 		return devices;
 
@@ -121,7 +126,7 @@ public class HommySystemOperations {
 				RegisterDevice.register(deviceSubscriber, TopicsPool.getTopic(Topics.LOCATION));
 			}
 			if (deviceSubscriber.getDeviceType().equals(DEVICE_TYPE.SMARTPHONE)) {
-				RegisterDevice.register(deviceSubscriber, TopicsPool.getTopic(Topics.LOCATION));
+				RegisterDevice.register(deviceSubscriber, TopicsPool.getTopic(Topics.NOTIFICATION));
 			}
 		}
 	}
